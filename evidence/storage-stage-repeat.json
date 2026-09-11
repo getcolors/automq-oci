@@ -1,0 +1,7 @@
+{
+  "stage" : "automq-storage",
+  "real_create_invocations" : 3,
+  "second_successful_create" : true,
+  "plan_exit" : 0,
+  "no_changes" : true
+}

@@ -1,0 +1,86 @@
+{
+  "active_boot_volumes": [],
+  "active_instances": [],
+  "active_volumes": [],
+  "api_keys": [],
+  "boot_volume_attachments": [],
+  "boot_volumes": [],
+  "bucket_details": {
+    "automq-oci-state-frqagv4ppzaz": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:27:48.949Z"
+        }
+      },
+      "etag": "7fcdfa36-86a1-4346-aeae-2c7c8990acf9",
+      "freeform-tags": {
+        "colors-profile": "automq-oci",
+        "colors-purpose": "managed-backend"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaajouhdk4lyab2f6zf7y2qfumw6qzjvnu2zemogl3uf6kb2gccyzlq",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-state-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-11T13:27:48.961000+00:00",
+      "versioning": "Enabled"
+    }
+  },
+  "bucket_version_counts": {
+    "automq-oci-state-frqagv4ppzaz": {
+      "bytes": 254314,
+      "delete_markers": 64,
+      "versions": 278
+    }
+  },
+  "buckets": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": null,
+      "etag": "7fcdfa36-86a1-4346-aeae-2c7c8990acf9",
+      "freeform-tags": null,
+      "name": "automq-oci-state-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "time-created": "2026-09-11T13:27:48.961000+00:00"
+    }
+  ],
+  "customer_secret_keys": [],
+  "groups": [],
+  "historical_resource_ids": {
+    "boot_volumes": [],
+    "instances": [],
+    "vnics": [],
+    "volumes": []
+  },
+  "instances": [],
+  "local_key_lock_exists": false,
+  "local_known_hosts_exists": false,
+  "local_private_key_exists": false,
+  "local_public_key_exists": false,
+  "local_ssh_alias_exists": false,
+  "network_security_groups": [],
+  "observed_at": "2026-09-11T14:19:11.363981+00:00",
+  "policies": [],
+  "profile": "automq-oci",
+  "public_ips": [],
+  "reserved_public_ips": [],
+  "scope_note": "The configured subnet and VCN predate this deployment and are shared.",
+  "users": [],
+  "vnic_attachments": [],
+  "vnics": [],
+  "volume_attachments": [],
+  "volumes": []
+}

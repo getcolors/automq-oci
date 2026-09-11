@@ -1,0 +1,299 @@
+{
+  "schema": 1,
+  "profile": "automq-oci",
+  "region": "eu-frankfurt-1",
+  "provider": "oracle/oci",
+  "provider_version": "8.4.0",
+  "state_backend": "OCI Object Storage",
+  "null_requested_value": "The option was omitted. The server-selected value was not observed on a running instance.",
+  "capture": "Only node IDs, shape sizing, availability domains, provider failure messages and request IDs were extracted from the private diagnostics.",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:28:33.391809+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": false,
+      "node_dispatches": 3,
+      "note": "Detailed provider responses were not captured for this attempt."
+    },
+    {
+      "attempt": 2,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:31:17.027482+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": false,
+      "node_dispatches": 0,
+      "note": "Detailed provider responses were not captured for this attempt."
+    },
+    {
+      "attempt": 3,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:36:24.107753+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.E4.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 8.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "3253ae085cdb5acb8540b361d1559d99/AE19D077CB89814AD503A46A46524139/F539A744B34A6A79174F7138B3EBE85B"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.E4.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 8.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "b9d4691868202594bd6b3751e7115015/9AC1723D119BA30ED203A46A4652417C/1480588A371B9CEA4C42E3A36D8A0680"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.E4.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 8.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "68aff0c95adc21f4cfa87e79537d4b1e/8AAE1B3F5A17BF26D503A46A46524141/9718C9DE24BAC8DFF04406A6314C839A"
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:39:11.659449+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 4.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "4449aec30e9dc02c032b592cc3ec2099/92CA1E6EEEC028CC7D04A46A46524177/4524E60DACE48F7E6734D53AFF0F7A11"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 4.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "5e06523a2bf34af1d7da929522956ca8/FEF743286109B45E7B04A46A46524110/28547A35D164E3EFA5E4A798A354B846"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 8,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 4.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "1464e83e72999523b53aa1228fe6e8ef/66482B62656AD4EB7C04A46A46524160/40F838602825911A94429219012C0938"
+        }
+      ]
+    },
+    {
+      "attempt": 5,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:42:25.520255+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 6,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 3.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "08b7a85a4694ea020176a208a47ebd9e/69F37B6BC540F99F3F05A46A46524162/38065EEBB98C263467BF1E5C52DD3FC8"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 6,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 3.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "0b86bd5fc7632eba21a01a5b85ddf198/C2FB7C58591C52853D05A46A4652417A/ABF692742F829AEEDA2636EA0A1B7CAD"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": 6,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 3.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "fd92ad5913f8682b28d3bf07bd73f87f/6890D73EF3BCA5DA3E05A46A465241D2/067BB8885AF5B8DA3F2953A0EB7C01C4"
+        }
+      ]
+    },
+    {
+      "attempt": 6,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:45:05.171920+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "66f9ca398beed1c8eef55fa322873071/BA308B0724211F54DD05A46A465241A7/FE18FF5B12D924282EC7CDED0438CBC7"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "1ff011d17c38b9202b26873e4d7d8688/B6B097614F004E35DE05A46A46524174/24CF23EC6DC41684A589B0FCEE230084"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "55e54918f1dc83fb47cda6c02653f4c9/5453A0DB661BDCBFDB05A46A46524118/F3AC7085CB372DC4B340E13288AD1748"
+        }
+      ]
+    },
+    {
+      "attempt": 7,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T13:50:32.904287+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.A1.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "500-InternalError, Out of host capacity.",
+          "opc_request_id": "b923c5093fcb81611d512efe4f824716/85A0453F1F82ED472407A46A4652412F/67C4A2C18C3330C009A2F9085656F86F"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.A1.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-2",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "500-InternalError, Out of host capacity.",
+          "opc_request_id": "4420881b586474a7b00339f3cb567f61/2ED9FCDA3D3C39C82407A46A46524187/A40CEF602C47DA1F119CF11FB11F94CE"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.A1.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-3",
+          "requested_ocpus": 1,
+          "requested_vcpus": null,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "500-InternalError, Out of host capacity.",
+          "opc_request_id": "7e729f82ad1215b2dbbd14abc8d60b9c/CDBFEC4635E107742507A46A46524190/A3E08B63E1F0DC3FF78505465AD463F9"
+        }
+      ]
+    },
+    {
+      "attempt": 8,
+      "command": "./green create",
+      "completed_at_utc": "2026-09-11T14:01:29.190898+00:00",
+      "outcome": "compute_lifecycle_refused",
+      "diagnostics_captured": true,
+      "nodes": [
+        {
+          "node_id": "0",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-1",
+          "requested_ocpus": null,
+          "requested_vcpus": 2,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "67cdd3dbfd0f6fc2d0570ebdcd90161c/CDEF01630B816429B209A46A4652415D/7070DDE30F2525E0B2F026949C6A4F35"
+        },
+        {
+          "node_id": "1",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-2",
+          "requested_ocpus": null,
+          "requested_vcpus": 2,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "ae298ac3629d36347b03b19d7aed7520/C00AF4AA65BD993EB009A46A465241A0/613E907DF547DF735857357B5427987A"
+        },
+        {
+          "node_id": "2",
+          "shape": "VM.Standard.A2.Flex",
+          "availability_domain": "XquT:EU-FRANKFURT-1-AD-3",
+          "requested_ocpus": null,
+          "requested_vcpus": 2,
+          "requested_memory_gib": null,
+          "operation": "LaunchInstance",
+          "failure": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 6.0. Valid ratio range: 0 - 0",
+          "opc_request_id": "d40cdc8698f6b575c4d17d4c7052a2e4/8EA479AAE04F168CB409A46A46524189/25A2FC1A1330B716E5AE1B7224328236"
+        }
+      ]
+    }
+  ],
+  "recovery_after_attempt_8": {
+    "status": "recovered",
+    "verified_at_utc": "2026-09-11T14:03:29.267315+00:00",
+    "targeted_operations": {
+      "0": "ad4b4ba8-8e3f-4dae-ba66-a5a26d3a4865",
+      "1": "c5d6311f-aef7-4a8c-af0e-df7e9044ef7a",
+      "2": "d877fc0c-65e6-4890-8bec-1177bf9723a9"
+    },
+    "resulting_node_phases": {
+      "0": "declared",
+      "1": "declared",
+      "2": "declared"
+    },
+    "resulting_compute_lock": "idle",
+    "shared_phase": "ready",
+    "method": "Native conditional journal transitions after valid empty node-state and paginated native instance and boot-volume absence checks across all three configured availability domains."
+  }
+}

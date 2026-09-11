@@ -1,0 +1,93 @@
+{
+  "profile": "automq-oci",
+  "guard": {
+    "exit": 2,
+    "message": "compute destruction is protected; set COLORS_PAR_COMPUTE_PREVENT_DESTROY=false to delete"
+  },
+  "published_partial_delete_before_fix": {
+    "package_source": "71b6032bd7576531149910d65ca64c811bf106fb",
+    "compute_source": "c6e7b486c631e620d457db39c8c7143510c12897",
+    "exit": 1,
+    "steps": [
+      "automq/start",
+      "automq/backend-finalize"
+    ],
+    "message": "managed backend finalization refused; live or unowned state remains",
+    "sizing_override_note": "OCPU1 supplied only to satisfy old version validation before the final vCPU configuration was supported."
+  },
+  "intermediate_working_tree_delete": {
+    "exit": 1,
+    "steps": [
+      "automq/start",
+      "automq/ansible",
+      "automq/ssh-config"
+    ],
+    "message": "compute cluster unavailable; refusing placeholder inventory",
+    "note": "Captured while partial-delete edits were in progress. No resource destroy stage ran."
+  },
+  "first_fixed_delete": {
+    "exit": 2,
+    "steps": [
+      "automq/start",
+      "automq/ansible",
+      "automq/ssh-config"
+    ],
+    "message": "invalid SSH host inventory",
+    "note": "Local SSH updater required a nonempty inventory even for removal. No storage or infrastructure destroy ran."
+  },
+  "second_fixed_delete": {
+    "exit": 1,
+    "steps": [
+      "automq/start",
+      "automq/ansible",
+      "automq/ssh-config",
+      "automq/dns",
+      "automq/storage"
+    ],
+    "message": "managed storage failed; inspect bucket ownership, state access, and provider permissions",
+    "note": "SSH block cleanup passed; application storage cleanup stopped before infrastructure.",
+    "verified_cause": "OCI CLI multipart list returned exit0 with empty stdout; cleanup tried to parse it as JSON."
+  },
+  "third_fixed_delete": {
+    "exit": 1,
+    "completed_steps": [
+      "automq/start",
+      "automq/ansible",
+      "automq/ssh-config",
+      "automq/dns",
+      "automq/storage",
+      "automq/infrastructure"
+    ],
+    "failed_step": "automq/backend-finalize",
+    "message": "managed backend finalization refused; live or unowned state remains"
+  },
+  "fourth_fixed_delete": {
+    "exit": 1,
+    "completed_steps": [
+      "automq/start"
+    ],
+    "message": "compute state unavailable; legacy monolithic state requires explicit migration",
+    "note": "Normal routing did not recognize the verified interrupted finalization state. No version purge ran."
+  },
+  "successful_resumed_delete": {
+    "exit": 0,
+    "completed_steps": [
+      "automq/start",
+      "automq/backend-finalize"
+    ],
+    "backend_finalization_ms": 242549,
+    "note": "Resumed a deleting marker after application storage and compute cleanup; deleted all state versions and bucket last."
+  },
+  "published_repeat_delete": {
+    "exit": 0,
+    "package_source": "ace2f656236741df3d92a6319599e27fd7dbd11f",
+    "compute_source": "58ac766d17cc1b174992986c1088d9d7045e13b5",
+    "local_source_overrides": false,
+    "completed_steps": [
+      "automq/start",
+      "automq/backend-finalize"
+    ],
+    "backend_finalization_ms": 1616,
+    "note": "Already-absent backend remained absent in independent native inventory."
+  }
+}

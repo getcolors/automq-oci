@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-09-11T14:22:25.898762+00:00",
+  "operation": "normal managed backend finalizer retry",
+  "result": "refused",
+  "api_request": {
+    "method": "PUT",
+    "route": "/n/{namespace}/b/{bucket}"
+  },
+  "api_response": {
+    "status": "404 Not Found",
+    "data": {
+      "code": "NotFound",
+      "message": "Not Found"
+    }
+  },
+  "exception": "managed backend metadata conflict",
+  "read_only_inventory": {
+    "journal_status": "retired",
+    "journal_lock": "held",
+    "owner_marker_status": "deleting",
+    "bucket_phase_tag": null,
+    "version_list_status": "200 OK",
+    "version_list_shape": "items array"
+  },
+  "fix": {
+    "method": "POST",
+    "content_type": "application/json",
+    "reference": "https://github.com/oracle/oci-python-sdk/blob/master/src/oci/object_storage/object_storage_client.py"
+  },
+  "state_bucket_deleted": false,
+  "notes": "Failed metadata update preceded version deletion. Retrying normal lifecycle finalization resumes the deleting owner marker."
+}

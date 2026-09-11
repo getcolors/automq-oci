@@ -1,0 +1,283 @@
+{
+  "active_boot_volumes": [],
+  "active_instances": [],
+  "active_volumes": [],
+  "boot_volume_attachments": [],
+  "boot_volumes": [],
+  "bucket_details": {
+    "automq-oci-data-frqagv4ppzaz": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:56:16.677Z"
+        }
+      },
+      "etag": "c0225c27-7092-4bd7-9fdd-a5f5b92bae70",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaaasavljlikirbmrv7pwdzrcetfuqbuwnebilbh3ulc7bzpbbsvrsq",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-data-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-11T13:56:16.690000+00:00",
+      "versioning": "Disabled"
+    },
+    "automq-oci-ops-frqagv4ppzaz": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:56:16.684Z"
+        }
+      },
+      "etag": "c2c1411d-2a31-426e-bd68-1a67135b70e8",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaad7y7ir3payv6y2wnieimbovdw6gms2oe7lhzkvliwbnvutdjclva",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-ops-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-11T13:56:16.695000+00:00",
+      "versioning": "Disabled"
+    },
+    "automq-oci-state-frqagv4ppzaz": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:27:48.949Z"
+        }
+      },
+      "etag": "7fcdfa36-86a1-4346-aeae-2c7c8990acf9",
+      "freeform-tags": {
+        "colors-profile": "automq-oci",
+        "colors-purpose": "managed-backend"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaajouhdk4lyab2f6zf7y2qfumw6qzjvnu2zemogl3uf6kb2gccyzlq",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-state-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-11T13:27:48.961000+00:00",
+      "versioning": "Enabled"
+    }
+  },
+  "bucket_version_counts": {
+    "automq-oci-data-frqagv4ppzaz": {
+      "bytes": 0,
+      "delete_markers": 0,
+      "versions": 0
+    },
+    "automq-oci-ops-frqagv4ppzaz": {
+      "bytes": 91,
+      "delete_markers": 0,
+      "versions": 4
+    },
+    "automq-oci-state-frqagv4ppzaz": {
+      "bytes": 204320,
+      "delete_markers": 59,
+      "versions": 242
+    }
+  },
+  "buckets": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": null,
+      "etag": "c0225c27-7092-4bd7-9fdd-a5f5b92bae70",
+      "freeform-tags": null,
+      "name": "automq-oci-data-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "time-created": "2026-09-11T13:56:16.690000+00:00"
+    },
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": null,
+      "etag": "c2c1411d-2a31-426e-bd68-1a67135b70e8",
+      "freeform-tags": null,
+      "name": "automq-oci-ops-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "time-created": "2026-09-11T13:56:16.695000+00:00"
+    },
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "created-by": "ocid1.user.oc1..aaaaaaaa2h257qc2khmtwck3pgat6bg2dah5hnwtpyjogxp3gfkxu4qgiqdq",
+      "defined-tags": null,
+      "etag": "7fcdfa36-86a1-4346-aeae-2c7c8990acf9",
+      "freeform-tags": null,
+      "name": "automq-oci-state-frqagv4ppzaz",
+      "namespace": "frqagv4ppzaz",
+      "time-created": "2026-09-11T13:27:48.961000+00:00"
+    }
+  ],
+  "customer_secret_keys": [
+    {
+      "display-name": "AutoMQ bucket access",
+      "time-created": "2026-09-11T13:58:32.158000+00:00",
+      "user_id": "ocid1.user.oc1..aaaaaaaathevkr4l5b4z5mepngl3s66sxk62ryrldcmcapn5cooruvnn3ema"
+    }
+  ],
+  "groups": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:56:16.829Z"
+        }
+      },
+      "description": "AutoMQ application bucket access",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.group.oc1..aaaaaaaajrwyng3zhjtttrjksojnexkoqytuh7yos37zqyzlvczzwx7y7fcq",
+      "inactive-status": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "time-created": "2026-09-11T13:56:16.857000+00:00"
+    }
+  ],
+  "historical_resource_ids": {
+    "boot_volumes": [],
+    "instances": [],
+    "vnics": [],
+    "volumes": []
+  },
+  "instances": [],
+  "local_key_lock_exists": false,
+  "local_known_hosts_exists": false,
+  "local_private_key_exists": true,
+  "local_public_key_exists": true,
+  "local_ssh_alias_exists": false,
+  "network_security_groups": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:28:13.009Z"
+        }
+      },
+      "display-name": "automq-oci-firewall",
+      "freeform-tags": {},
+      "id": "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaajc5au7nm3sfclrvzbnam7tlegb57ajs63363723jzxq2rsipqpea",
+      "lifecycle-state": "AVAILABLE",
+      "time-created": "2026-09-11T13:28:13.135000+00:00",
+      "vcn-id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaal3n4eviavj5clhl4fdc7kuic5i5kpsrphtgfagbpfbutz4qnodjq"
+    }
+  ],
+  "observed_at": "2026-09-11T14:01:23.511201+00:00",
+  "policies": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:56:19.229Z"
+        }
+      },
+      "description": "Access only the AutoMQ data and ops buckets",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.policy.oc1..aaaaaaaamjv7dz6d5pjtnppfiqkbynwqvsikygmbfc3xirn5c6jij625proa",
+      "inactive-status": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "statements": [
+        "Allow group id ocid1.group.oc1..aaaaaaaajrwyng3zhjtttrjksojnexkoqytuh7yos37zqyzlvczzwx7y7fcq to read buckets in tenancy where target.bucket.name = 'automq-oci-data-frqagv4ppzaz'",
+        "Allow group id ocid1.group.oc1..aaaaaaaajrwyng3zhjtttrjksojnexkoqytuh7yos37zqyzlvczzwx7y7fcq to manage objects in tenancy where target.bucket.name = 'automq-oci-data-frqagv4ppzaz'",
+        "Allow group id ocid1.group.oc1..aaaaaaaajrwyng3zhjtttrjksojnexkoqytuh7yos37zqyzlvczzwx7y7fcq to read buckets in tenancy where target.bucket.name = 'automq-oci-ops-frqagv4ppzaz'",
+        "Allow group id ocid1.group.oc1..aaaaaaaajrwyng3zhjtttrjksojnexkoqytuh7yos37zqyzlvczzwx7y7fcq to manage objects in tenancy where target.bucket.name = 'automq-oci-ops-frqagv4ppzaz'"
+      ],
+      "time-created": "2026-09-11T13:56:19.272000+00:00",
+      "version-date": null
+    }
+  ],
+  "profile": "automq-oci",
+  "public_ips": [],
+  "reserved_public_ips": [],
+  "scope_note": "The configured subnet and VCN predate this deployment and are shared.",
+  "users": [
+    {
+      "capabilities": {
+        "can-use-api-keys": true,
+        "can-use-auth-tokens": true,
+        "can-use-console-password": true,
+        "can-use-customer-secret-keys": true,
+        "can-use-db-credentials": true,
+        "can-use-o-auth2-client-credentials": true,
+        "can-use-smtp-credentials": true
+      },
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq",
+      "db-user-name": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/alberto.miorin@gmail.com",
+          "CreatedOn": "2026-09-11T13:58:29.969Z"
+        }
+      },
+      "description": "AutoMQ application bucket access",
+      "email": "claude+automq-oci-storage@ululi.it",
+      "email-verified": false,
+      "external-identifier": "b7d10b06fc8543caba4e31dc270fad45",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.user.oc1..aaaaaaaathevkr4l5b4z5mepngl3s66sxk62ryrldcmcapn5cooruvnn3ema",
+      "identity-provider-id": null,
+      "inactive-status": null,
+      "is-mfa-activated": false,
+      "last-successful-login-time": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "previous-successful-login-time": null,
+      "time-created": "2026-09-11T13:58:29.998000+00:00"
+    }
+  ],
+  "vnic_attachments": [],
+  "vnics": [],
+  "volume_attachments": [],
+  "volumes": []
+}

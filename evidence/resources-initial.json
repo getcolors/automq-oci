@@ -1,0 +1,20 @@
+{
+  "active_boot_volumes": [],
+  "active_instances": [],
+  "boot_volumes": [],
+  "bucket_details": {},
+  "buckets": [],
+  "groups": [],
+  "instances": [],
+  "local_key_lock_exists": false,
+  "local_known_hosts_exists": false,
+  "local_private_key_exists": false,
+  "local_public_key_exists": false,
+  "local_ssh_alias_exists": false,
+  "network_security_groups": [],
+  "observed_at": "2026-09-11T13:17:33.695415+00:00",
+  "policies": [],
+  "profile": "automq-oci",
+  "users": [],
+  "volumes": []
+}

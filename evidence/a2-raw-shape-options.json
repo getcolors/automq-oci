@@ -1,0 +1,65 @@
+{
+  "availabilityDomain": "XquT:EU-FRANKFURT-1-AD-1",
+  "baselineOcpuUtilizations": null,
+  "billingType": "PAID",
+  "bsNvmeAttachmentsConfig": null,
+  "gpuDescription": null,
+  "gpus": 0,
+  "isBilledForStoppedInstance": false,
+  "isCnic": false,
+  "isFlexible": true,
+  "isLiveMigrationSupported": true,
+  "isSubcore": false,
+  "localDiskDescription": null,
+  "localDisks": 0,
+  "localDisksTotalSizeInGBs": null,
+  "maxVnicAttachmentOptions": {
+    "defaultPerOcpu": 1.0,
+    "max": 24.0,
+    "min": 2
+  },
+  "maxVnicAttachments": 2,
+  "memoryInGBs": 6.0,
+  "memoryOptions": {
+    "defaultPerOcpuInGBs": 6.0,
+    "maxInGBs": 946.0,
+    "maxPerNumaNodeInGBs": 946.0,
+    "maxPerOcpuInGBs": 0.0,
+    "minInGBs": 1.0,
+    "minPerOcpuInGBs": 0.0
+  },
+  "minTotalBaselineOcpusRequired": null,
+  "networkPorts": 1,
+  "networkingBandwidthInGbps": 1.0,
+  "networkingBandwidthOptions": {
+    "defaultPerOcpuInGbps": 1.0,
+    "maxInGbps": 78.0,
+    "minInGbps": 1.0
+  },
+  "ocpuOptions": {
+    "max": 78.0,
+    "maxPerNumaNode": 78.0,
+    "min": 1.0
+  },
+  "ocpus": 0.5,
+  "platformConfigOptions": null,
+  "platformNames": [],
+  "processorDescription": "3.0 GHz Ampere\u00ae AmpereOne\u2122 (Siryn\u2122)",
+  "quotaNames": [
+    "standard-a2-core-regional-count",
+    "standard-a2-core-count",
+    "standard-a2-memory-regional-count",
+    "standard-a2-memory-count"
+  ],
+  "rdmaBandwidthInGbps": 0,
+  "rdmaPorts": 0,
+  "recommendedAlternatives": null,
+  "resizeCompatibleShapes": [
+    "VM.Standard.A2.Flex",
+    "VM.Standard.A1.Flex"
+  ],
+  "shape": "VM.Standard.A2.Flex",
+  "supportedResourceManagement": [
+    "STATIC"
+  ]
+}

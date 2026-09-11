@@ -1,0 +1,43 @@
+{
+  "active_boot_volumes": [],
+  "active_instances": [],
+  "active_volumes": [],
+  "api_keys": [],
+  "boot_volume_attachments": [],
+  "boot_volumes": [],
+  "bucket_details": {},
+  "bucket_version_counts": {},
+  "buckets": [],
+  "customer_secret_keys": [],
+  "groups": [],
+  "historical_resource_ids": {
+    "boot_volumes": [],
+    "instances": [],
+    "vnics": [],
+    "volumes": []
+  },
+  "instances": [],
+  "local_key_lock_exists": false,
+  "local_known_hosts_exists": false,
+  "local_private_key_exists": false,
+  "local_public_key_exists": false,
+  "local_ssh_alias_exists": false,
+  "network_security_groups": [],
+  "observed_at": "2026-09-11T14:28:05.094259+00:00",
+  "policies": [],
+  "profile": "automq-oci",
+  "public_ips": [],
+  "reserved_public_ips": [],
+  "retained_shared_network": {
+    "subnet_id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaeo3hhvldibbw42m6atn52izm6vmaxxcjbfm2fz7t3glvw3ovihta",
+    "subnet_state": "AVAILABLE",
+    "vcn_id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaal3n4eviavj5clhl4fdc7kuic5i5kpsrphtgfagbpfbutz4qnodjq",
+    "vcn_state": "AVAILABLE"
+  },
+  "scope_note": "The configured subnet and VCN predate this deployment and are shared.",
+  "users": [],
+  "vnic_attachments": [],
+  "vnics": [],
+  "volume_attachments": [],
+  "volumes": []
+}

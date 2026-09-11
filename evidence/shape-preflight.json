@@ -1,0 +1,82 @@
+{
+  "failed_shape": "VM.Standard.E4.Flex",
+  "ocpus": 1,
+  "memory_in_gbs": 8,
+  "error": "400-InvalidParameter, Invalid ratio of memory in GB to OCPUs. Current ratio: 8.0. Valid ratio range: 0 - 0",
+  "limit_observation": "standard-e4-core-count and standard-e4-memory-count are zero in all Frankfurt availability domains",
+  "available_limits": [
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-1",
+      "name": "standard-a1-core-count",
+      "value": 2
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-2",
+      "name": "standard-a1-core-count",
+      "value": 2
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-3",
+      "name": "standard-a1-core-count",
+      "value": 2
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-1",
+      "name": "standard-a1-memory-count",
+      "value": 12
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-2",
+      "name": "standard-a1-memory-count",
+      "value": 12
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-3",
+      "name": "standard-a1-memory-count",
+      "value": 12
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-1",
+      "name": "standard-a2-core-count",
+      "value": 8
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-2",
+      "name": "standard-a2-core-count",
+      "value": 8
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-3",
+      "name": "standard-a2-core-count",
+      "value": 8
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-1",
+      "name": "standard-a2-memory-count",
+      "value": 96
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-2",
+      "name": "standard-a2-memory-count",
+      "value": 96
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-3",
+      "name": "standard-a2-memory-count",
+      "value": 96
+    },
+    {
+      "ad": "XquT:EU-FRANKFURT-1-AD-2",
+      "name": "standard-e2-micro-core-count",
+      "value": 2
+    }
+  ],
+  "selected_shape": "VM.Standard.A2.Flex",
+  "image_name": "Canonical-Ubuntu-24.04-aarch64-2026.08.25-0",
+  "image_id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+  "automq_manifest_platforms": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
+  "interpretation": "Selected A2 after the E4 launch error and independent limits inspection. No E4 instance or boot volume was created."
+}

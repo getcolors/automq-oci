@@ -1,0 +1,9 @@
+# Default-deny private and generated dotfiles.
+.*
+!.envrc
+!.gitignore
+!.agents
+*.log
+
+__pycache__/
+*.pyc

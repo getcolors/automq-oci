@@ -1,0 +1,10 @@
+{
+  "initial_create": "200 OK",
+  "competing_create": "412 Precondition Failed",
+  "exact_etag_replace": "200 OK",
+  "stale_etag_replace": "412 Precondition Failed",
+  "etag_changed": true,
+  "final_value": {
+    "value": "second"
+  }
+}

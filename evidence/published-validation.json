@@ -1,0 +1,10 @@
+{
+  "build": 0,
+  "create_dry_run": 0,
+  "profile": "automq-oci",
+  "local_source_overrides": false,
+  "package_repository_commit": "d37766dbac4f115f543fa55cdbd3f25d46a4fc32",
+  "package_source": "ace2f656236741df3d92a6319599e27fd7dbd11f",
+  "compute_source": "58ac766d17cc1b174992986c1088d9d7045e13b5",
+  "verified_at_utc": "2026-09-11T14:29:41.794769+00:00"
+}

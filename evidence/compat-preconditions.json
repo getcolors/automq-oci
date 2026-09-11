@@ -1,0 +1,7 @@
+{
+  "initial_create": 200,
+  "competing_create": 412,
+  "exact_etag_replace": 200,
+  "stale_etag_replace": 200,
+  "final_value": "stale"
+}

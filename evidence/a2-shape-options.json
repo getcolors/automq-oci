@@ -1,0 +1,61 @@
+[
+  {
+    "baseline-ocpu-utilizations": null,
+    "billing-type": "PAID",
+    "gpu-description": null,
+    "gpus": 0,
+    "is-billed-for-stopped-instance": false,
+    "is-flexible": true,
+    "is-live-migration-supported": true,
+    "is-subcore": false,
+    "local-disk-description": null,
+    "local-disks": 0,
+    "local-disks-total-size-in-gbs": null,
+    "max-vnic-attachment-options": {
+      "default-per-ocpu": 1.0,
+      "max": 24.0,
+      "min": 2
+    },
+    "max-vnic-attachments": 2,
+    "memory-in-gbs": 6.0,
+    "memory-options": {
+      "default-per-ocpu-in-g-bs": 6.0,
+      "max-in-g-bs": 946.0,
+      "max-per-numa-node-in-gbs": 946.0,
+      "max-per-ocpu-in-gbs": 0.0,
+      "min-in-g-bs": 1.0,
+      "min-per-ocpu-in-gbs": 0.0
+    },
+    "min-total-baseline-ocpus-required": null,
+    "network-ports": 1,
+    "networking-bandwidth-in-gbps": 1.0,
+    "networking-bandwidth-options": {
+      "default-per-ocpu-in-gbps": 1.0,
+      "max-in-gbps": 78.0,
+      "min-in-gbps": 1.0
+    },
+    "ocpu-options": {
+      "max": 78.0,
+      "max-per-numa-node": 78.0,
+      "min": 1.0
+    },
+    "ocpus": 0.5,
+    "platform-config-options": null,
+    "platform-names": [],
+    "processor-description": "3.0 GHz Ampere® AmpereOne™ (Siryn™)",
+    "quota-names": [
+      "standard-a2-core-regional-count",
+      "standard-a2-core-count",
+      "standard-a2-memory-regional-count",
+      "standard-a2-memory-count"
+    ],
+    "rdma-bandwidth-in-gbps": 0,
+    "rdma-ports": 0,
+    "recommended-alternatives": null,
+    "resize-compatible-shapes": [
+      "VM.Standard.A2.Flex",
+      "VM.Standard.A1.Flex"
+    ],
+    "shape": "VM.Standard.A2.Flex"
+  }
+]

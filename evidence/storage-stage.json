@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "data_list_http": 200,
+    "data_object_roundtrip": true,
+    "lease_competitor_denied": true,
+    "lease_current_release": true,
+    "lease_expired_takeover": true,
+    "lease_holder_renewal": true,
+    "lease_initial_acquire": true,
+    "lease_new_holder_excludes": true,
+    "lease_stale_release_denied": true,
+    "native_state_head_http": 404,
+    "native_state_put_http": 404,
+    "operator_verified_state_bucket_and_marker": true,
+    "ops_list_http": 200,
+    "ops_object_roundtrip": true,
+    "package_conditional_preconditions": true,
+    "state_get_object_http": 404,
+    "state_head_bucket_http": 404,
+    "state_list_objects_v2_http": 404,
+    "state_put_object_http": 404
+  },
+  "credential_readiness_attempts": 1,
+  "credential_readiness_seconds": 14.7,
+  "passed": true,
+  "profile": "automq-oci",
+  "readiness_history": {
+    "initial_complete_preconditions_followed_by_transient_auth_error": "SignatureDoesNotMatch: secret key required to complete authentication could not be found",
+    "subsequent_complete_probe_passed": true
+  },
+  "scope": "package storage stage only; no broker acceptance",
+  "verified_at_utc": "2026-09-11T14:06:51.558481+00:00"
+}

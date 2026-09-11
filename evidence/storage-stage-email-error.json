@@ -1,0 +1,9 @@
+{
+  "scope": "package storage stage only; no broker acceptance",
+  "failed_at_utc": "2026-09-11T13:56:19.456615+00:00",
+  "http_status": 400,
+  "error_code": "IdcsConversionError",
+  "message": "The primary email must be specified.",
+  "resource": "oci_identity_user.application",
+  "fix": "Provide tenancy-unique automq-oci-user-email on the managed service user."
+}
