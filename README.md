@@ -39,8 +39,9 @@ The committed destruction guard stays enabled. Lifecycle testing uses the
 one-run override `COLORS_PAR_COMPUTE_PREVENT_DESTROY=false ./green delete`.
 Deletion removes stored records with the owned application buckets and removes
 the state bucket last. The test's separately created backend credential must
-also be revoked after state finalization. The September 11 credential was revoked. The September 12 state credential
-remains in the ignored private file while this cluster is running.
+also be revoked after state finalization. The September 11 credential was
+revoked. The September 12 state credential remains in the ignored private file
+while this cluster is running.
 
 See [verification.md](verification.md) for the observed results, limitations
 and cleanup scope.

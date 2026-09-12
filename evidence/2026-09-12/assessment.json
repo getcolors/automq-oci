@@ -61,5 +61,7 @@
   "identity_final": "instances, formatted metadata, secret bundle, CA, server config and image unchanged",
   "cleanup_scope": "running cluster retained; full running-cluster deletion not tested; historical Sept11 partial cleanup remains separate",
   "final_firewall_audit": "passed: six unchanged applications, identical rules, one NTP rule per host",
-  "final_native_inventory": "passed: three running instances, three boot volumes, three owned OCI buckets; shared network retained"
+  "final_native_inventory": "passed: three running instances, three boot volumes, three owned OCI buckets; shared network retained",
+  "installed_skill_documentation_commit": "3da40c6281ae4eba3ab21a80ae9c21c3ebed8cb3",
+  "documentation_refresh": "launcher unchanged; final tested source remains 6b76c01e730c79cfef3e0f9baee68f85b29bd604"
 }
