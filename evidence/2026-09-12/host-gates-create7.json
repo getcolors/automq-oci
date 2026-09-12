@@ -1,0 +1,18 @@
+{
+  "attempt": 7,
+  "source": "ANSIBLE_LOG_PATH Report the gates task only",
+  "lines": [
+    "smoke: gates",
+    "  ok   \u2014 3 brokers registered",
+    "  ok   \u2014 controller quorum: 3 voters, leader 0",
+    "  ok   \u2014 500 records produced and consumed back exactly",
+    "  ok   \u2014 automq-oci-data-fryovegrk8e7 holds 58 AutoMQ objects",
+    "  ok   \u2014 automq-oci-ops-fryovegrk8e7 holds 11 AutoMQ objects",
+    "  ok   \u2014 a wrong password is refused",
+    "  ok   \u2014 an unauthenticated connection is refused",
+    "  ok   \u2014 the client principal is denied a cluster-level operation",
+    "  ok   \u2014 the client principal cannot create a topic outside colors-",
+    "smoke: 9 gates passed"
+  ],
+  "passed": true
+}

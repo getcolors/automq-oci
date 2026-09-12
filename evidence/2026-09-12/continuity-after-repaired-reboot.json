@@ -1,0 +1,9 @@
+{
+  "action": "verify",
+  "passed": true,
+  "profile": "automq-oci",
+  "records": 50,
+  "run": "fde162e1564b4db2b5318f1701404570",
+  "sha256": "89318d21439ae3cd649c431298c26a01507796ba3ceb7a70966e0d78daa0215e",
+  "topic": "colors-continuity-fde162e1564b4db2b5318f1701404570"
+}

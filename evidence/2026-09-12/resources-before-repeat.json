@@ -1,0 +1,1186 @@
+{
+  "active_boot_volumes": [
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:10.049Z"
+        }
+      },
+      "display-name": "automq-oci-0 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljtntpzjbxsg7wd53nwnqycciljtdfxhsuu5bmcvsxys2ydqsgmeirq",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:15.495000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    },
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.208Z"
+        }
+      },
+      "display-name": "automq-oci-1 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljrldosxhjhqwjjwhubmzrexdpqpeh2ybd7jjmk3jxzwqa6skfavsrq",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {
+        "orcl-cloud": {
+          "free-tier-retained": "true"
+        }
+      },
+      "time-created": "2026-09-12T08:22:12.420000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    },
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.785Z"
+        }
+      },
+      "display-name": "automq-oci-2 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljsfpqmiaqlqpugs2pq7ypc4do2tefhitnwbdp3d7ybzelggk53ro2a",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {
+        "orcl-cloud": {
+          "free-tier-retained": "true"
+        }
+      },
+      "time-created": "2026-09-12T08:22:12.648000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    }
+  ],
+  "active_instances": [
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:10.049Z"
+        }
+      },
+      "display-name": "automq-oci-0",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:11.074000+00:00",
+      "time-maintenance-reboot-due": null
+    },
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.208Z"
+        }
+      },
+      "display-name": "automq-oci-1",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:08.960000+00:00",
+      "time-maintenance-reboot-due": null
+    },
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.785Z"
+        }
+      },
+      "display-name": "automq-oci-2",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:09.589000+00:00",
+      "time-maintenance-reboot-due": null
+    }
+  ],
+  "active_volumes": [],
+  "api_keys": [
+    {
+      "fingerprint": "df:97:62:64:b9:0c:f6:65:7a:3d:cb:bd:1b:e2:2a:42",
+      "time-created": "2026-09-12T08:22:57.993000+00:00",
+      "user_id": "ocid1.user.oc1..aaaaaaaakkyt7mxt6l66bhivnkstkv6ernjxbym3tdagbn7reykufc7sjigq"
+    }
+  ],
+  "boot_volume_attachments": [
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "boot-volume-id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljtntpzjbxsg7wd53nwnqycciljtdfxhsuu5bmcvsxys2ydqsgmeirq",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": "Remote boot attachment for instance",
+      "encryption-in-transit-type": "NONE",
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "is-pv-encryption-in-transit-enabled": false,
+      "lifecycle-state": "ATTACHED",
+      "time-created": "2026-09-12T08:22:15.659000+00:00",
+      "time-updated": "2026-09-12T08:22:39.703000+00:00"
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "boot-volume-id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljrldosxhjhqwjjwhubmzrexdpqpeh2ybd7jjmk3jxzwqa6skfavsrq",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": "Remote boot attachment for instance",
+      "encryption-in-transit-type": "NONE",
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "is-pv-encryption-in-transit-enabled": false,
+      "lifecycle-state": "ATTACHED",
+      "time-created": "2026-09-12T08:22:12.549000+00:00",
+      "time-updated": "2026-09-12T08:22:33.802000+00:00"
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "boot-volume-id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljsfpqmiaqlqpugs2pq7ypc4do2tefhitnwbdp3d7ybzelggk53ro2a",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": "Remote boot attachment for instance",
+      "encryption-in-transit-type": "NONE",
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "is-pv-encryption-in-transit-enabled": false,
+      "lifecycle-state": "ATTACHED",
+      "time-created": "2026-09-12T08:22:12.757000+00:00",
+      "time-updated": "2026-09-12T08:22:35.078000+00:00"
+    }
+  ],
+  "boot_volumes": [
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:10.049Z"
+        }
+      },
+      "display-name": "automq-oci-0 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljtntpzjbxsg7wd53nwnqycciljtdfxhsuu5bmcvsxys2ydqsgmeirq",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:15.495000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    },
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.208Z"
+        }
+      },
+      "display-name": "automq-oci-1 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljrldosxhjhqwjjwhubmzrexdpqpeh2ybd7jjmk3jxzwqa6skfavsrq",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {
+        "orcl-cloud": {
+          "free-tier-retained": "true"
+        }
+      },
+      "time-created": "2026-09-12T08:22:12.420000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    },
+    {
+      "auto-tuned-vpus-per-gb": null,
+      "autotune-policies": [],
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "boot-volume-replicas": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.785Z"
+        }
+      },
+      "display-name": "automq-oci-2 (Boot Volume)",
+      "freeform-tags": {},
+      "id": "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljsfpqmiaqlqpugs2pq7ypc4do2tefhitnwbdp3d7ybzelggk53ro2a",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "is-auto-tune-enabled": false,
+      "is-hydrated": true,
+      "kms-key-id": null,
+      "lifecycle-state": "AVAILABLE",
+      "size-in-gbs": 50,
+      "size-in-mbs": 51200,
+      "source-details": null,
+      "system-tags": {
+        "orcl-cloud": {
+          "free-tier-retained": "true"
+        }
+      },
+      "time-created": "2026-09-12T08:22:12.648000+00:00",
+      "volume-group-id": null,
+      "vpus-per-gb": 10
+    }
+  ],
+  "bucket_details": {
+    "automq-oci-data-fryovegrk8e7": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:57.356Z"
+        }
+      },
+      "etag": "839b26c5-884e-4b72-9048-dcfa538f15ab",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaabf47yff3u4xr7xkaburok4vup36u5hq6zeznhymh7itrmlutvnjq",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-data-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-12T08:22:57.364000+00:00",
+      "versioning": "Disabled"
+    },
+    "automq-oci-ops-fryovegrk8e7": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:57.360Z"
+        }
+      },
+      "etag": "19675cd1-0be2-4ab0-a973-f28d3af31024",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaalzborv5ruytfgmcpdudmeigmac2xxo7rlgvmaz6muemz3xz3kdja",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-ops-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-12T08:22:57.370000+00:00",
+      "versioning": "Disabled"
+    },
+    "automq-oci-state-fryovegrk8e7": {
+      "approximate-count": null,
+      "approximate-size": null,
+      "auto-tiering": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:17:47.172Z"
+        }
+      },
+      "etag": "861d2d17-0cd3-443e-ba29-54761fc7d70b",
+      "freeform-tags": {
+        "colors-profile": "automq-oci",
+        "colors-purpose": "managed-backend"
+      },
+      "id": "ocid1.bucket.oc1.eu-frankfurt-1.aaaaaaaasjqj2rfczwnbwpc47dmqirk5lgc635oml4m4oqhepqbjnopcjpgq",
+      "is-read-only": false,
+      "kms-key-id": null,
+      "metadata": {},
+      "name": "automq-oci-state-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "object-events-enabled": false,
+      "object-lifecycle-policy-etag": null,
+      "public-access-type": "NoPublicAccess",
+      "replication-enabled": false,
+      "storage-tier": "Standard",
+      "time-created": "2026-09-12T08:17:47.181000+00:00",
+      "versioning": "Enabled"
+    }
+  },
+  "bucket_version_counts": {
+    "automq-oci-data-fryovegrk8e7": {
+      "bytes": 20939071,
+      "delete_markers": 0,
+      "versions": 37
+    },
+    "automq-oci-ops-fryovegrk8e7": {
+      "bytes": 341804,
+      "delete_markers": 0,
+      "versions": 17
+    },
+    "automq-oci-state-fryovegrk8e7": {
+      "bytes": 129821,
+      "delete_markers": 27,
+      "versions": 99
+    }
+  },
+  "buckets": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": null,
+      "etag": "839b26c5-884e-4b72-9048-dcfa538f15ab",
+      "freeform-tags": null,
+      "name": "automq-oci-data-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "time-created": "2026-09-12T08:22:57.364000+00:00"
+    },
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": null,
+      "etag": "19675cd1-0be2-4ab0-a973-f28d3af31024",
+      "freeform-tags": null,
+      "name": "automq-oci-ops-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "time-created": "2026-09-12T08:22:57.370000+00:00"
+    },
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "created-by": "ocid1.user.oc1..aaaaaaaa4yj5pj7qkgfzdwolvzrbc5ku677gdfgxvyih7vdx4u6uhpc4oima",
+      "defined-tags": null,
+      "etag": "861d2d17-0cd3-443e-ba29-54761fc7d70b",
+      "freeform-tags": null,
+      "name": "automq-oci-state-fryovegrk8e7",
+      "namespace": "fryovegrk8e7",
+      "time-created": "2026-09-12T08:17:47.181000+00:00"
+    }
+  ],
+  "compartment": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+  "customer_secret_keys": [
+    {
+      "display-name": "AutoMQ bucket access",
+      "time-created": "2026-09-12T08:23:01.259000+00:00",
+      "user_id": "ocid1.user.oc1..aaaaaaaakkyt7mxt6l66bhivnkstkv6ernjxbym3tdagbn7reykufc7sjigq"
+    }
+  ],
+  "groups": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:57.341Z"
+        }
+      },
+      "description": "AutoMQ application bucket access",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.group.oc1..aaaaaaaa4yvri7cdatlyfqrf5tmkphbljlq7b4fccxlqp32yzchxhx23gmzq",
+      "inactive-status": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "time-created": "2026-09-12T08:22:57.370000+00:00"
+    }
+  ],
+  "historical_resource_ids": {
+    "boot_volumes": [
+      "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljrldosxhjhqwjjwhubmzrexdpqpeh2ybd7jjmk3jxzwqa6skfavsrq",
+      "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljsfpqmiaqlqpugs2pq7ypc4do2tefhitnwbdp3d7ybzelggk53ro2a",
+      "ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljtntpzjbxsg7wd53nwnqycciljtdfxhsuu5bmcvsxys2ydqsgmeirq"
+    ],
+    "instances": [
+      "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka"
+    ],
+    "vnics": [
+      "ocid1.vnic.oc1.eu-frankfurt-1.abtheljr4alldr7tfz7khrqnhpan3tygd7bdxxqxuhe6lfyhmt757vtacixq",
+      "ocid1.vnic.oc1.eu-frankfurt-1.abtheljsyxjs5ew6hypcnw622y5ftbkk4tcvpykoa6pz27gubdrqjkynbifa",
+      "ocid1.vnic.oc1.eu-frankfurt-1.abtheljtrkuraccggwjorngeelhlegnmumq5jebjnuymyugmyzkiu2zr55gq"
+    ],
+    "volumes": []
+  },
+  "instances": [
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:10.049Z"
+        }
+      },
+      "display-name": "automq-oci-0",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:11.074000+00:00",
+      "time-maintenance-reboot-due": null
+    },
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.208Z"
+        }
+      },
+      "display-name": "automq-oci-1",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:08.960000+00:00",
+      "time-maintenance-reboot-due": null
+    },
+    {
+      "agent-config": {
+        "are-all-plugins-disabled": false,
+        "is-management-disabled": false,
+        "is-monitoring-disabled": false,
+        "plugins-config": null
+      },
+      "availability-config": {
+        "is-live-migration-preferred": null,
+        "recovery-action": "RESTORE_INSTANCE"
+      },
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "capacity-reservation-id": null,
+      "cluster-placement-group-id": null,
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "dedicated-vm-host-id": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.785Z"
+        }
+      },
+      "display-name": "automq-oci-2",
+      "extended-metadata": {},
+      "fault-domain": "FAULT-DOMAIN-3",
+      "freeform-tags": {},
+      "id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "instance-configuration-id": null,
+      "instance-options": {
+        "are-legacy-imds-endpoints-disabled": false
+      },
+      "ipxe-script": null,
+      "is-ai-enterprise-enabled": null,
+      "is-cross-numa-node": false,
+      "launch-mode": "PARAVIRTUALIZED",
+      "launch-options": {
+        "boot-volume-type": "PARAVIRTUALIZED",
+        "firmware": "UEFI_64",
+        "is-consistent-volume-naming-enabled": true,
+        "is-pv-encryption-in-transit-enabled": false,
+        "network-type": "PARAVIRTUALIZED",
+        "remote-data-volume-type": "PARAVIRTUALIZED"
+      },
+      "licensing-configs": null,
+      "lifecycle-state": "RUNNING",
+      "metadata": {
+        "ssh_authorized_keys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAB/GDSplxrXsS1X5m8TZMJzvJ5btPhBpHXH+eRuFYx automq-oci managed by Colors"
+      },
+      "placement-constraint-details": null,
+      "platform-config": null,
+      "preemptible-instance-config": null,
+      "region": "eu-frankfurt-1",
+      "security-attributes": {},
+      "security-attributes-state": "STABLE",
+      "shape": "VM.Standard.A1.Flex",
+      "shape-config": {
+        "baseline-ocpu-utilization": null,
+        "gpu-description": null,
+        "gpus": 0,
+        "local-disk-description": null,
+        "local-disks": 0,
+        "local-disks-total-size-in-gbs": null,
+        "max-vnic-attachments": 2,
+        "memory-in-gbs": 8.0,
+        "networking-bandwidth-in-gbps": 1.0,
+        "ocpus": 1.0,
+        "processor-description": "3.0 GHz Ampere\u00ae Altra\u2122",
+        "resource-management": null,
+        "vcpus": 1
+      },
+      "source-details": {
+        "boot-volume-size-in-gbs": null,
+        "boot-volume-vpus-per-gb": null,
+        "image-id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+        "instance-source-image-filter-details": null,
+        "kms-key-id": null,
+        "source-type": "image"
+      },
+      "system-tags": {},
+      "time-created": "2026-09-12T08:22:09.589000+00:00",
+      "time-maintenance-reboot-due": null
+    }
+  ],
+  "local_key_lock_exists": false,
+  "local_known_hosts_exists": false,
+  "local_private_key_exists": true,
+  "local_public_key_exists": true,
+  "local_ssh_alias_exists": true,
+  "namespace": "fryovegrk8e7",
+  "network_security_groups": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:21:51.735Z"
+        }
+      },
+      "display-name": "automq-oci-firewall",
+      "freeform-tags": {},
+      "id": "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaay6u75xcr6iivzw24atz3hfoaq3hb3k3yqgpjmqcag4qorbv4czba",
+      "lifecycle-state": "AVAILABLE",
+      "time-created": "2026-09-12T08:21:51.904000+00:00",
+      "vcn-id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaazsxpdvyabfp3fr7a64s7nkjyvwxvlxmfrgpnpiet2gncovkq6zhq"
+    }
+  ],
+  "observed_at": "2026-09-12T09:00:00.068108+00:00",
+  "policies": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:59.777Z"
+        }
+      },
+      "description": "Access only the AutoMQ data and ops buckets",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.policy.oc1..aaaaaaaaazqffcv5ai3dk4mc7rbniiblzk4m5o3wnajoyu6ltufr5c2jakiq",
+      "inactive-status": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "statements": [
+        "Allow group id ocid1.group.oc1..aaaaaaaa4yvri7cdatlyfqrf5tmkphbljlq7b4fccxlqp32yzchxhx23gmzq to read buckets in tenancy where target.bucket.name = 'automq-oci-data-fryovegrk8e7'",
+        "Allow group id ocid1.group.oc1..aaaaaaaa4yvri7cdatlyfqrf5tmkphbljlq7b4fccxlqp32yzchxhx23gmzq to manage objects in tenancy where target.bucket.name = 'automq-oci-data-fryovegrk8e7'",
+        "Allow group id ocid1.group.oc1..aaaaaaaa4yvri7cdatlyfqrf5tmkphbljlq7b4fccxlqp32yzchxhx23gmzq to read buckets in tenancy where target.bucket.name = 'automq-oci-ops-fryovegrk8e7'",
+        "Allow group id ocid1.group.oc1..aaaaaaaa4yvri7cdatlyfqrf5tmkphbljlq7b4fccxlqp32yzchxhx23gmzq to manage objects in tenancy where target.bucket.name = 'automq-oci-ops-fryovegrk8e7'"
+      ],
+      "time-created": "2026-09-12T08:22:59.818000+00:00",
+      "version-date": null
+    }
+  ],
+  "profile": "automq-oci",
+  "public_ips": [
+    {
+      "public_ip": "130.61.160.140",
+      "vnic_id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljtrkuraccggwjorngeelhlegnmumq5jebjnuymyugmyzkiu2zr55gq"
+    },
+    {
+      "public_ip": "130.61.219.153",
+      "vnic_id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljr4alldr7tfz7khrqnhpan3tygd7bdxxqxuhe6lfyhmt757vtacixq"
+    },
+    {
+      "public_ip": "130.61.176.27",
+      "vnic_id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljsyxjs5ew6hypcnw622y5ftbkk4tcvpykoa6pz27gubdrqjkynbifa"
+    }
+  ],
+  "reserved_public_ips": [],
+  "retained_shared_network": {
+    "subnet_id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+    "subnet_state": "AVAILABLE",
+    "vcn_id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaazsxpdvyabfp3fr7a64s7nkjyvwxvlxmfrgpnpiet2gncovkq6zhq",
+    "vcn_state": "AVAILABLE"
+  },
+  "scope_note": "The configured subnet and VCN predate this deployment and are shared.",
+  "users": [
+    {
+      "capabilities": {
+        "can-use-api-keys": true,
+        "can-use-auth-tokens": true,
+        "can-use-console-password": true,
+        "can-use-customer-secret-keys": true,
+        "can-use-db-credentials": true,
+        "can-use-o-auth2-client-credentials": true,
+        "can-use-smtp-credentials": true
+      },
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "db-user-name": null,
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:57.319Z"
+        }
+      },
+      "description": "AutoMQ application bucket access",
+      "email": "oci+automq-storage@bigconfig.ai",
+      "email-verified": false,
+      "external-identifier": "b7bf333a292848429108cb0f889723b5",
+      "freeform-tags": {
+        "colors-owner": "automq-storage",
+        "colors-profile": "automq-oci"
+      },
+      "id": "ocid1.user.oc1..aaaaaaaakkyt7mxt6l66bhivnkstkv6ernjxbym3tdagbn7reykufc7sjigq",
+      "identity-provider-id": null,
+      "inactive-status": null,
+      "is-mfa-activated": false,
+      "last-successful-login-time": null,
+      "lifecycle-state": "ACTIVE",
+      "name": "automq-oci-automq-storage",
+      "previous-successful-login-time": null,
+      "time-created": "2026-09-12T08:22:57.352000+00:00"
+    }
+  ],
+  "vnic_attachments": [
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": null,
+      "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljtzsxpdvycp2kgk6mxyu2hqks2i4j6brdcmbxxliinfyfhospaq44q",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "lifecycle-state": "ATTACHED",
+      "nic-index": 0,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:16.611000+00:00",
+      "vlan-id": null,
+      "vlan-tag": 476,
+      "vnic-id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljtrkuraccggwjorngeelhlegnmumq5jebjnuymyugmyzkiu2zr55gq"
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": null,
+      "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrzsxpdvycs56rtvswynnkh5k5wqtneip26b3ycz7xlzb6ttbsrwhq",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "lifecycle-state": "ATTACHED",
+      "nic-index": 0,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:13.221000+00:00",
+      "vlan-id": null,
+      "vlan-tag": 2058,
+      "vnic-id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljr4alldr7tfz7khrqnhpan3tygd7bdxxqxuhe6lfyhmt757vtacixq"
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "display-name": null,
+      "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljszsxpdvyczsbfjttdz5ewg4cu2h6zumo7r7brpid4jvusc76zkppa",
+      "instance-id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "lifecycle-state": "ATTACHED",
+      "nic-index": 0,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:13.448000+00:00",
+      "vlan-id": null,
+      "vlan-tag": 2220,
+      "vnic-id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljsyxjs5ew6hypcnw622y5ftbkk4tcvpykoa6pz27gubdrqjkynbifa"
+    }
+  ],
+  "vnics": [
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:10.205Z"
+        }
+      },
+      "display-name": "automq-oci-0",
+      "freeform-tags": {},
+      "hostname-label": "automq-oci-0",
+      "id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljtrkuraccggwjorngeelhlegnmumq5jebjnuymyugmyzkiu2zr55gq",
+      "ipv6-addresses": null,
+      "is-primary": true,
+      "lifecycle-state": "AVAILABLE",
+      "mac-address": "02:00:17:06:F9:7F",
+      "nsg-ids": [
+        "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaay6u75xcr6iivzw24atz3hfoaq3hb3k3yqgpjmqcag4qorbv4czba"
+      ],
+      "private-ip": "10.0.0.172",
+      "public-ip": "130.61.160.140",
+      "route-table-id": null,
+      "security-attributes": {},
+      "skip-source-dest-check": false,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:16.426000+00:00",
+      "vlan-id": null
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.316Z"
+        }
+      },
+      "display-name": "automq-oci-1",
+      "freeform-tags": {},
+      "hostname-label": "automq-oci-1",
+      "id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljr4alldr7tfz7khrqnhpan3tygd7bdxxqxuhe6lfyhmt757vtacixq",
+      "ipv6-addresses": null,
+      "is-primary": true,
+      "lifecycle-state": "AVAILABLE",
+      "mac-address": "02:00:17:11:B2:5A",
+      "nsg-ids": [
+        "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaay6u75xcr6iivzw24atz3hfoaq3hb3k3yqgpjmqcag4qorbv4czba"
+      ],
+      "private-ip": "10.0.0.166",
+      "public-ip": "130.61.219.153",
+      "route-table-id": null,
+      "security-attributes": {},
+      "skip-source-dest-check": false,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:12.964000+00:00",
+      "vlan-id": null
+    },
+    {
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "compartment-id": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+      "defined-tags": {
+        "Oracle-Tags": {
+          "CreatedBy": "default/montemagno.ada@gmail.com",
+          "CreatedOn": "2026-09-12T08:22:08.946Z"
+        }
+      },
+      "display-name": "automq-oci-2",
+      "freeform-tags": {},
+      "hostname-label": "automq-oci-2",
+      "id": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljsyxjs5ew6hypcnw622y5ftbkk4tcvpykoa6pz27gubdrqjkynbifa",
+      "ipv6-addresses": null,
+      "is-primary": true,
+      "lifecycle-state": "AVAILABLE",
+      "mac-address": "02:00:17:01:6F:64",
+      "nsg-ids": [
+        "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaay6u75xcr6iivzw24atz3hfoaq3hb3k3yqgpjmqcag4qorbv4czba"
+      ],
+      "private-ip": "10.0.0.238",
+      "public-ip": "130.61.176.27",
+      "route-table-id": null,
+      "security-attributes": {},
+      "skip-source-dest-check": false,
+      "subnet-id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "time-created": "2026-09-12T08:22:13.232000+00:00",
+      "vlan-id": null
+    }
+  ],
+  "volume_attachments": [],
+  "volumes": []
+}

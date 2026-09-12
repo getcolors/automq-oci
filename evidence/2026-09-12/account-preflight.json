@@ -1,0 +1,284 @@
+{
+  "observed_at": "2026-09-12T08:15:51.867724+00:00",
+  "identity": {
+    "profile": "DEFAULT",
+    "auth": "security_token",
+    "tenancy": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+    "region": "eu-frankfurt-1",
+    "namespace": "fryovegrk8e7"
+  },
+  "a1_availability": [
+    {
+      "availability_domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "ocpus": {
+        "available": 250,
+        "effective-quota-value": null,
+        "fractional-availability": 250.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "memory_gb": {
+        "available": 1666,
+        "effective-quota-value": null,
+        "fractional-availability": 1666.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "shape": {
+        "shape": "VM.Standard.A1.Flex",
+        "ocpu-options": {
+          "max": 80.0,
+          "max-per-numa-node": 80.0,
+          "min": 1.0
+        },
+        "memory-options": {
+          "default-per-ocpu-in-g-bs": 6.0,
+          "max-in-g-bs": 512.0,
+          "max-per-numa-node-in-gbs": 512.0,
+          "max-per-ocpu-in-gbs": 64.0,
+          "min-in-g-bs": 1.0,
+          "min-per-ocpu-in-gbs": 1.0
+        }
+      }
+    },
+    {
+      "availability_domain": "xTQn:EU-FRANKFURT-1-AD-2",
+      "ocpus": {
+        "available": 250,
+        "effective-quota-value": null,
+        "fractional-availability": 250.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "memory_gb": {
+        "available": 1666,
+        "effective-quota-value": null,
+        "fractional-availability": 1666.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "shape": {
+        "shape": "VM.Standard.A1.Flex",
+        "ocpu-options": {
+          "max": 80.0,
+          "max-per-numa-node": 80.0,
+          "min": 1.0
+        },
+        "memory-options": {
+          "default-per-ocpu-in-g-bs": 6.0,
+          "max-in-g-bs": 512.0,
+          "max-per-numa-node-in-gbs": 512.0,
+          "max-per-ocpu-in-gbs": 64.0,
+          "min-in-g-bs": 1.0,
+          "min-per-ocpu-in-gbs": 1.0
+        }
+      }
+    },
+    {
+      "availability_domain": "xTQn:EU-FRANKFURT-1-AD-3",
+      "ocpus": {
+        "available": 250,
+        "effective-quota-value": null,
+        "fractional-availability": 250.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "memory_gb": {
+        "available": 1666,
+        "effective-quota-value": null,
+        "fractional-availability": 1666.0,
+        "fractional-usage": 0.0,
+        "used": 0
+      },
+      "shape": {
+        "shape": "VM.Standard.A1.Flex",
+        "ocpu-options": {
+          "max": 80.0,
+          "max-per-numa-node": 80.0,
+          "min": 1.0
+        },
+        "memory-options": {
+          "default-per-ocpu-in-g-bs": 6.0,
+          "max-in-g-bs": 512.0,
+          "max-per-numa-node-in-gbs": 512.0,
+          "max-per-ocpu-in-gbs": 64.0,
+          "min-in-g-bs": 1.0,
+          "min-per-ocpu-in-gbs": 1.0
+        }
+      }
+    }
+  ],
+  "recommended": {
+    "node_count": 3,
+    "shape": "VM.Standard.A1.Flex",
+    "ocpus_per_node": 1,
+    "memory_gb_per_node": 6,
+    "availability_domains": [
+      "xTQn:EU-FRANKFURT-1-AD-1",
+      "xTQn:EU-FRANKFURT-1-AD-2",
+      "xTQn:EU-FRANKFURT-1-AD-3"
+    ],
+    "image": {
+      "id": "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq",
+      "display-name": "Canonical-Ubuntu-24.04-aarch64-2026.08.25-0",
+      "operating-system-version": "24.04"
+    },
+    "subnet_id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma"
+  },
+  "network": {
+    "subnet": {
+      "id": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma",
+      "display-name": "public subnet-ampere",
+      "availability-domain": null,
+      "cidr-block": "10.0.0.0/24",
+      "lifecycle-state": "AVAILABLE",
+      "prohibit-internet-ingress": false,
+      "prohibit-public-ip-on-vnic": false,
+      "vcn-id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaazsxpdvyabfp3fr7a64s7nkjyvwxvlxmfrgpnpiet2gncovkq6zhq",
+      "route-table-id": "ocid1.routetable.oc1.eu-frankfurt-1.aaaaaaaacordkvqntdfhhpukmbvedx3upar5h56yxet65jw46chhnf3hs3ya",
+      "security-list-ids": [
+        "ocid1.securitylist.oc1.eu-frankfurt-1.aaaaaaaa3pdfgwktuupn6t5wh3u63qrfizia2kc2xv57t3hbjnplx5pmiasa"
+      ]
+    },
+    "vcn": {
+      "id": "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaazsxpdvyabfp3fr7a64s7nkjyvwxvlxmfrgpnpiet2gncovkq6zhq",
+      "display-name": "ampere",
+      "cidr-block": "10.0.0.0/16",
+      "lifecycle-state": "AVAILABLE"
+    },
+    "route_rules": [
+      {
+        "cidr-block": null,
+        "description": null,
+        "destination": "0.0.0.0/0",
+        "destination-type": "CIDR_BLOCK",
+        "network-entity-id": "ocid1.internetgateway.oc1.eu-frankfurt-1.aaaaaaaaiftzk3c3obxh5aiziirrbj5k4hlr5gx5sv3n7glxlh2ao3xug54a",
+        "route-type": "STATIC"
+      }
+    ],
+    "security_rules": {
+      "ingress-security-rules": [
+        {
+          "description": null,
+          "icmp-options": null,
+          "is-stateless": false,
+          "protocol": "6",
+          "source": "0.0.0.0/0",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": {
+            "destination-port-range": {
+              "max": 22,
+              "min": 22
+            },
+            "source-port-range": null
+          },
+          "udp-options": null
+        },
+        {
+          "description": null,
+          "icmp-options": null,
+          "is-stateless": false,
+          "protocol": "6",
+          "source": "0.0.0.0/0",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": {
+            "destination-port-range": {
+              "max": 80,
+              "min": 80
+            },
+            "source-port-range": null
+          },
+          "udp-options": null
+        },
+        {
+          "description": null,
+          "icmp-options": null,
+          "is-stateless": false,
+          "protocol": "6",
+          "source": "0.0.0.0/0",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": {
+            "destination-port-range": {
+              "max": 443,
+              "min": 443
+            },
+            "source-port-range": null
+          },
+          "udp-options": null
+        },
+        {
+          "description": null,
+          "icmp-options": {
+            "code": 4,
+            "type": 3
+          },
+          "is-stateless": false,
+          "protocol": "1",
+          "source": "0.0.0.0/0",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": null,
+          "udp-options": null
+        },
+        {
+          "description": null,
+          "icmp-options": {
+            "code": null,
+            "type": 3
+          },
+          "is-stateless": false,
+          "protocol": "1",
+          "source": "10.0.0.0/16",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": null,
+          "udp-options": null
+        },
+        {
+          "description": "Eternal Terminal",
+          "icmp-options": null,
+          "is-stateless": false,
+          "protocol": "6",
+          "source": "0.0.0.0/0",
+          "source-type": "CIDR_BLOCK",
+          "tcp-options": {
+            "destination-port-range": {
+              "max": 2022,
+              "min": 2022
+            },
+            "source-port-range": null
+          },
+          "udp-options": null
+        }
+      ],
+      "egress-security-rules": [
+        {
+          "description": null,
+          "destination": "0.0.0.0/0",
+          "destination-type": "CIDR_BLOCK",
+          "icmp-options": null,
+          "is-stateless": false,
+          "protocol": "all",
+          "tcp-options": null,
+          "udp-options": null
+        }
+      ]
+    },
+    "internet_gateway": {
+      "id": "ocid1.internetgateway.oc1.eu-frankfurt-1.aaaaaaaaiftzk3c3obxh5aiziirrbj5k4hlr5gx5sv3n7glxlh2ao3xug54a",
+      "is-enabled": true,
+      "lifecycle-state": "AVAILABLE"
+    }
+  },
+  "existing_active_instances": [
+    {
+      "display-name": "walter-ada",
+      "shape": "VM.Standard.A2.Flex",
+      "availability-domain": "xTQn:EU-FRANKFURT-1-AD-1",
+      "lifecycle-state": "RUNNING"
+    }
+  ],
+  "limitations": [
+    "Service-limit availability is not a host-capacity reservation. Actual launch remains the capacity acceptance test.",
+    "Existing subnet security lists are additive with deployment NSG; inherited public ports22,80,443,2022 remain allowed. No inherited9093 or9094 TCP rule was found."
+  ],
+  "mutations_performed": false
+}

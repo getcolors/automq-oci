@@ -1,0 +1,267 @@
+{
+  "checks": {
+    "all_nodes_arm64": true,
+    "all_private_connections_open": true,
+    "containers_running_healthy": true,
+    "distinct_instances": true,
+    "expected_node_ids": true,
+    "formatted_node_ids_match": true,
+    "identities_and_credentials_unchanged": true,
+    "public_boundary": true,
+    "same_ca": true,
+    "same_cluster_id": true,
+    "same_secret_bundle": true
+  },
+  "nodes": [
+    {
+      "alias": "automq-oci-0",
+      "architecture": "aarch64",
+      "ca_sha256": "eded2b11a283008412e78b75dd62d88531289e0829706543d4aba3ee08ea65d0",
+      "container_health": "healthy",
+      "container_image": "sha256:68bf5df674ab9755da51f5200c152df391b0968aeeaf9ec4d12619517cd1234f",
+      "container_status": "running",
+      "controller_port": 9093,
+      "external_port": 9092,
+      "instance_id": "ocid1.instance.oc1.eu-frankfurt-1.antheljtzsxpdvycnp4q3uzuuo5wdezk445w4fyoilvfco7bezusoitiqhka",
+      "internal_port": 9094,
+      "metadata": {
+        "cluster.id": "bzC0Rv_0SBuO0ykEvTn1sg",
+        "directory.id": "xvv8-LxkXufjiKglPaSPcQ",
+        "node.id": "0"
+      },
+      "node_id": "0",
+      "private_host": "10.0.0.172",
+      "public_host": "130.61.160.140",
+      "secret_bundle_sha256": "f3ac2c85c3a399f27216898cfc70da42b9c01ac1e341c0f4bf46dbcc8e0cf598",
+      "server_config_sha256": "f47afd087ba926bcb9ebb5f2cb3d619ff1eb0e27b5f97293307c67f73d48c5df"
+    },
+    {
+      "alias": "automq-oci-1",
+      "architecture": "aarch64",
+      "ca_sha256": "eded2b11a283008412e78b75dd62d88531289e0829706543d4aba3ee08ea65d0",
+      "container_health": "healthy",
+      "container_image": "sha256:68bf5df674ab9755da51f5200c152df391b0968aeeaf9ec4d12619517cd1234f",
+      "container_status": "running",
+      "controller_port": 9093,
+      "external_port": 9092,
+      "instance_id": "ocid1.instance.oc1.eu-frankfurt-1.antheljrzsxpdvycnj7s6nuir46xgce2bt5mjjd44hp3sj6zw36v3pentjfa",
+      "internal_port": 9094,
+      "metadata": {
+        "cluster.id": "bzC0Rv_0SBuO0ykEvTn1sg",
+        "directory.id": "Olo4FSv0odd-HEAk4nUgxw",
+        "node.id": "1"
+      },
+      "node_id": "1",
+      "private_host": "10.0.0.166",
+      "public_host": "130.61.219.153",
+      "secret_bundle_sha256": "f3ac2c85c3a399f27216898cfc70da42b9c01ac1e341c0f4bf46dbcc8e0cf598",
+      "server_config_sha256": "d8c1be4ddf662be27e163bb02bccfae21e6f39fee9640050f23d358b5a200dbd"
+    },
+    {
+      "alias": "automq-oci-2",
+      "architecture": "aarch64",
+      "ca_sha256": "eded2b11a283008412e78b75dd62d88531289e0829706543d4aba3ee08ea65d0",
+      "container_health": "healthy",
+      "container_image": "sha256:68bf5df674ab9755da51f5200c152df391b0968aeeaf9ec4d12619517cd1234f",
+      "container_status": "running",
+      "controller_port": 9093,
+      "external_port": 9092,
+      "instance_id": "ocid1.instance.oc1.eu-frankfurt-1.antheljszsxpdvyckufie5gmge7ju3mgeog6mvw4ods7wqsecyqc25uxzo3q",
+      "internal_port": 9094,
+      "metadata": {
+        "cluster.id": "bzC0Rv_0SBuO0ykEvTn1sg",
+        "directory.id": "Mw7FOiMSR7B3POfjSr3gmA",
+        "node.id": "2"
+      },
+      "node_id": "2",
+      "private_host": "10.0.0.238",
+      "public_host": "130.61.176.27",
+      "secret_bundle_sha256": "f3ac2c85c3a399f27216898cfc70da42b9c01ac1e341c0f4bf46dbcc8e0cf598",
+      "server_config_sha256": "866cd644a1cddb50995e83269f889f0b8c0700fc3de59932f1133fef07c90792"
+    }
+  ],
+  "passed": true,
+  "private_tcp": {
+    "automq-oci-0": [
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "2"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "2"
+      }
+    ],
+    "automq-oci-1": [
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "2"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "2"
+      }
+    ],
+    "automq-oci-2": [
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "0"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "1"
+      },
+      {
+        "open": true,
+        "port": 9093,
+        "role": "controller",
+        "target_node": "2"
+      },
+      {
+        "open": true,
+        "port": 9094,
+        "role": "internal",
+        "target_node": "2"
+      }
+    ]
+  },
+  "profile": "automq-oci",
+  "public_tcp": [
+    {
+      "expected_open": true,
+      "node": "0",
+      "open": true,
+      "port": 9092,
+      "role": "external"
+    },
+    {
+      "expected_open": false,
+      "node": "0",
+      "open": false,
+      "port": 9093,
+      "role": "controller"
+    },
+    {
+      "expected_open": false,
+      "node": "0",
+      "open": false,
+      "port": 9094,
+      "role": "internal"
+    },
+    {
+      "expected_open": true,
+      "node": "1",
+      "open": true,
+      "port": 9092,
+      "role": "external"
+    },
+    {
+      "expected_open": false,
+      "node": "1",
+      "open": false,
+      "port": 9093,
+      "role": "controller"
+    },
+    {
+      "expected_open": false,
+      "node": "1",
+      "open": false,
+      "port": 9094,
+      "role": "internal"
+    },
+    {
+      "expected_open": true,
+      "node": "2",
+      "open": true,
+      "port": 9092,
+      "role": "external"
+    },
+    {
+      "expected_open": false,
+      "node": "2",
+      "open": false,
+      "port": 9093,
+      "role": "controller"
+    },
+    {
+      "expected_open": false,
+      "node": "2",
+      "open": false,
+      "port": 9094,
+      "role": "internal"
+    }
+  ],
+  "verified_at_utc": "2026-09-12T09:30:14.934344+00:00"
+}

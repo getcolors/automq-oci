@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-12",
+  "profile": "automq-oci",
+  "workdir": ".colors-a1",
+  "region": "eu-frankfurt-1",
+  "namespace": "fryovegrk8e7",
+  "tenancy": "ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a",
+  "initial_package_commit": "d37766dbac4f115f543fa55cdbd3f25d46a4fc32",
+  "initial_package_source": "ace2f656236741df3d92a6319599e27fd7dbd11f",
+  "initial_compute_source": "58ac766d17cc1b174992986c1088d9d7045e13b5",
+  "first_create_local_source_overrides": false,
+  "shape": "VM.Standard.A1.Flex",
+  "ocpus_per_node": 1,
+  "memory_gib_per_node": 8,
+  "node_count": 3,
+  "storage": "Only deployment-owned OCI state, data and ops buckets",
+  "prior_assessment": "https://github.com/getcolors/automq-oci/tree/19b1a9e15f1d95bc3db7fe24840015c0e9718251",
+  "status": "passed; three healthy A1 brokers retained",
+  "storage_audit": "passed installed-client native CAS/lease and scoped state-denial checks",
+  "first_broker_package_source": "0bbeb50765ee73fc79b97c1418162eb6da8b7c19",
+  "first_public_acceptance": {
+    "passed": 13,
+    "failed": 3,
+    "failure": "literalIP reverseDNS prerequisite",
+    "failover_scope": "graceful stop, not crash"
+  },
+  "continuity_after_first_reboot": "50 exact records preserved",
+  "lifecycle_decision": "leave cluster running; committed delete guard remains true",
+  "package_commit": "379608efb87f53a67e5d556c42efd4a660a531c3",
+  "package_source": "6b76c01e730c79cfef3e0f9baee68f85b29bd604",
+  "compute_source": "58ac766d17cc1b174992986c1088d9d7045e13b5",
+  "first_corrected_acceptance": {
+    "attempt": 5,
+    "passed": 16,
+    "failed": 0,
+    "abrupt_recovery_seconds": 11
+  },
+  "firewall_repaired_reboot": "all 8 checks passed",
+  "continuity_after_create5": "50 records exact",
+  "identity_after_create5": "instances, formatted metadata, secret bundle, CA, server config and image unchanged",
+  "full_successful_creates": [
+    5,
+    6,
+    7
+  ],
+  "successful_source_counts": {
+    "5aac5a3dfc689071156f5e67c5f1bb7eaec5ca50": 2,
+    "6b76c01e730c79cfef3e0f9baee68f85b29bd604": 1
+  },
+  "final_host_gates": 9,
+  "final_public_gates": {
+    "passed": 16,
+    "failed": 0
+  },
+  "abrupt_recovery_seconds": [
+    11,
+    11,
+    10
+  ],
+  "continuity_final": "50 records exact after two host reboots and three successful full converges",
+  "identity_final": "instances, formatted metadata, secret bundle, CA, server config and image unchanged",
+  "cleanup_scope": "running cluster retained; full running-cluster deletion not tested; historical Sept11 partial cleanup remains separate",
+  "final_firewall_audit": "passed: six unchanged applications, identical rules, one NTP rule per host",
+  "final_native_inventory": "passed: three running instances, three boot volumes, three owned OCI buckets; shared network retained"
+}

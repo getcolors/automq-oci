@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-09-12T09:02:46.781401+00:00",
+  "host": "automq-oci-0",
+  "container": "automq-kill-semantics-6b5b73f724484693af485ed545854ccd",
+  "restart_policy": "unless-stopped",
+  "network": "none",
+  "mounts": [],
+  "running_before": true,
+  "running_after": false,
+  "exit_code": 137,
+  "restart_count": 0,
+  "observed_seconds_after_fault": 3.13,
+  "removed": true,
+  "scope": "Disposable container from the cached broker image; no broker container or data mutation."
+}

@@ -1,6 +1,6 @@
 # OCI AutoMQ live deployment. Non-secret desired state only.
 profile: automq-oci
-workdir: .colors
+workdir: .colors-a1
 provider-compute: oci
 provider-dns: none
 automq-tls-mode: private-ca
@@ -26,9 +26,9 @@ automq-heap-opts: "-Xms2g -Xmx2g -XX:MetaspaceSize=96m -XX:MaxDirectMemorySize=3
 automq-client-topic-prefix: colors-
 automq-topic-partitions: 6
 automq-log-retention-hours: 168
-automq-data-r2-bucket: automq-oci-data-frqagv4ppzaz
-automq-ops-r2-bucket: automq-oci-ops-frqagv4ppzaz
-automq-r2-endpoint: https://frqagv4ppzaz.compat.objectstorage.eu-frankfurt-1.oraclecloud.com
+automq-data-r2-bucket: automq-oci-data-fryovegrk8e7
+automq-ops-r2-bucket: automq-oci-ops-fryovegrk8e7
+automq-r2-endpoint: https://fryovegrk8e7.compat.objectstorage.eu-frankfurt-1.oraclecloud.com
 automq-r2-region: eu-frankfurt-1
 automq-wal-batch-interval-ms: 250
 automq-wal-max-bytes-in-batch: 8388608
@@ -36,24 +36,25 @@ automq-wal-max-bytes-in-batch: 8388608
 oci-config-file-profile: DEFAULT
 oci-region: eu-frankfurt-1
 oci-home-region: eu-frankfurt-1
-oci-namespace: frqagv4ppzaz
-oci-tenancy-id: ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq
-oci-compartment-id: ocid1.tenancy.oc1..aaaaaaaabz6wkmand36zaln2wbyuqqflr2uzohoj3briepj4mfpohas2bxsq
-oci-subnet-id: ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaeo3hhvldibbw42m6atn52izm6vmaxxcjbfm2fz7t3glvw3ovihta
-oci-availability-domain: XquT:EU-FRANKFURT-1-AD-1
-oci-shape: VM.Standard.A2.Flex
-oci-vcpus: 2
+oci-namespace: fryovegrk8e7
+oci-tenancy-id: ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a
+oci-compartment-id: ocid1.tenancy.oc1..aaaaaaaal4wmmpzv2fzkdz2vrfdizywgzjid6dqlgcankrrr7jyydo7ozb3a
+oci-subnet-id: ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaotya32pihejgi25vrdfnjda3qg52kpsjnd7od5oiqifbsi4rqqma
+oci-availability-domain: xTQn:EU-FRANKFURT-1-AD-1
+oci-shape: VM.Standard.A1.Flex
+oci-ocpus: 1
+oci-memory-in-gbs: 8
 oci-boot-volume-size-in-gbs: 50
 oci-boot-volume-vpus-per-gb: 10
 oci-image-id: ocid1.image.oc1.eu-frankfurt-1.aaaaaaaatnudwzlqzctpx5rrxohiionypan5fngceqdbybtw6ve7oyhmnnqq
 automq-ssh-sources: [0.0.0.0/0]
 automq-kafka-sources: [0.0.0.0/0]
 oci-auth: SecurityToken
-oci-bucket: automq-oci-state-frqagv4ppzaz
+oci-bucket: automq-oci-state-fryovegrk8e7
 oci-bucket-mode: managed
 oci-availability-domains:
-  - XquT:EU-FRANKFURT-1-AD-1
-  - XquT:EU-FRANKFURT-1-AD-2
-  - XquT:EU-FRANKFURT-1-AD-3
+  - xTQn:EU-FRANKFURT-1-AD-1
+  - xTQn:EU-FRANKFURT-1-AD-2
+  - xTQn:EU-FRANKFURT-1-AD-3
 
-automq-oci-user-email: claude+automq-oci-storage@ululi.it
+automq-oci-user-email: oci+automq-storage@bigconfig.ai

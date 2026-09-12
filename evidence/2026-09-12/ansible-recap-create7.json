@@ -1,0 +1,45 @@
+{
+  "recap": {
+    "automq-oci-0": {
+      "ok": 51,
+      "changed": 1,
+      "unreachable": 0,
+      "failed": 0,
+      "skipped": 4,
+      "rescued": 0,
+      "ignored": 0
+    },
+    "automq-oci-1": {
+      "ok": 31,
+      "changed": 1,
+      "unreachable": 0,
+      "failed": 0,
+      "skipped": 5,
+      "rescued": 0,
+      "ignored": 0
+    },
+    "automq-oci-2": {
+      "ok": 31,
+      "changed": 1,
+      "unreachable": 0,
+      "failed": 0,
+      "skipped": 5,
+      "rescued": 0,
+      "ignored": 0
+    }
+  },
+  "changed_tasks": [
+    {
+      "node": "automq-oci-1",
+      "task": "Install the OCI firewall helper"
+    },
+    {
+      "node": "automq-oci-2",
+      "task": "Install the OCI firewall helper"
+    },
+    {
+      "node": "automq-oci-0",
+      "task": "Install the OCI firewall helper"
+    }
+  ]
+}

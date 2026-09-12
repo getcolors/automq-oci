@@ -1,152 +1,179 @@
 # OCI live verification
 
-**Result:** storage provisioning and conditional-write probes ran against OCI.
-No broker VM launched, so Kafka acceptance, continuity and repeat full
-convergence were not tested.
+The September 12 deployment runs three A1 AutoMQ broker/controllers in a different
+OCI tenancy from the [September 11 test](verification-2026-09-11.md). All three
+VMs launched. Two full converges on source `5aac5a3` passed all 16 public gates.
+The final source `6b76c01` also passed all 16 public gates and nine host gates.
 
-Profile `automq-oci` requests three combined AutoMQ broker/controllers in OCI
-`eu-frankfurt-1`. State, data and ops use separate OCI buckets. The test uses
-the existing subnet in `colors.yml` and a deployment-owned network security
-group. The subnet and VCN remain shared resources.
+## Deployment
 
-## Verified storage preconditions
+Profile `automq-oci` uses `VM.Standard.A1.Flex`, 1 OCPU and 8 GiB per node,
+distributed across Frankfurt's three availability domains. The image is Ubuntu
+24.04 ARM64. AutoMQ uses the immutable 1.7.4 multiarchitecture image index in
+`colors.yml`. [Native discovery](evidence/2026-09-12/account-preflight.json)
+confirmed A1 availability, the image and the shared regional subnet.
 
-The isolated [S3 compatibility probe](evidence/compat-preconditions.json)
-accepted its initial conditional create and refused a competitor with HTTP
-412. It accepted both an exact-ETag replacement and a stale-ETag replacement.
-The final object contained the stale writer's value. OCI's compatibility API
-therefore did not enforce the tested PUT `If-Match` contract.
+The deployment owns three OCI buckets: state, data and ops. State and broker
+records use OCI's S3 compatibility endpoint; ownership coordination and restart
+leases use the native OCI API. No AWS or Cloudflare bucket participates. The
+shared subnet and VCN remain outside the deployment lifecycle.
 
-The [native API probe](evidence/native-preconditions.json) accepted the current
-ETag, refused the stale ETag with HTTP 412, and preserved the newer value.
-Coordination must use this native contract. AutoMQ record storage continues
-to use the S3-compatible endpoint.
+## Readiness and adoption
 
-Both probes used isolated temporary buckets and objects. The operator removed
-them after the tests.
+The existing `DEFAULT` OCI login was reused. No sibling project supplied a
+customer secret key, so a separate state backend credential was created and
+saved only in ignored `.envrc.private`. The application stage generated its
+own bucket-scoped identity, customer secret key and API signing key.
 
-## Credential readiness
+Successful ListBuckets did not establish GetObject readiness. The first create
+failed before VM dispatch on a compatibility state read. The second launched
+all three VMs but failed on the adoption marker GetObject after a narrower
+precondition gate passed. The [attempt history](evidence/2026-09-12/converge-attempts.json)
+and [prerequisite observations](evidence/2026-09-12/compute-prerequisite-readiness.json)
+record the exact failures. No signing-key or endpoint change was needed for the
+state read to become available.
 
-The test reused the `DEFAULT` OCI session used by sibling deployments.
-No sibling supplied an OCI customer secret key, so the operator created a
-separate state credential and saved it in ignored `.envrc.private` with mode
-0600. It remains separate from the application's scoped storage identity.
+A subsequent attempt passed authentication but refused adoption because two
+failed readiness attempts had left test objects in the ops bucket. The operator
+verified their exact names and synthetic bodies, removed only those two keys,
+and proved the bucket empty. [Cleanup evidence](evidence/2026-09-12/precondition-leftovers.json)
+preserves that scope. No ownership or genesis marker was forged. The source fix
+records exact probe keys before writes and requires cleanup across retries
+before the gate can succeed.
 
-The [sampled authentication record](evidence/credential-propagation.json)
-shows a last failure 7 minutes 15 seconds after creation and a first success
-8 minutes 15 seconds after creation. The same credential and configuration
-served both requests. This observation does not establish a general OCI
-propagation bound.
+## Firewall and reboot
 
-## Provisioning attempts
+The original image had native INPUT rejection even while UFW was inactive.
+The package's scoped native chain admits public Kafka from the configured CIDRs
+and controller/internal traffic only from the three peer IPs. Initial
+[firewall checks](evidence/2026-09-12/firewall-applied.json) preserved unowned
+rules and were unchanged on a second application. Temporary listener probes
+passed 18 private and 9 public connection checks; these were TCP checks, not
+Kafka acceptance.
 
-The [initial native inventory](evidence/resources-initial.json) found no
-deployment resources. Build and dry-run passed after OCI backend and private
-ingress support were added.
+A real reboot exposed a separate defect: the base package installation had
+removed OCI's native persistence packages when installing UFW. AutoMQ's owned
+chain returned, but the original platform INPUT/FORWARD rejection and
+InstanceServices OUTPUT protections did not. The failed
+[reboot audit](evidence/2026-09-12/reboot-node-1.json) preserves the before/after
+rules. Broker health and all 50 independent continuity records survived that
+reboot. The [repair receipts](evidence/2026-09-12/platform-persistence-repair.json)
+show native persistence restored on all three nodes without flushing live
+rules or replacing the saved platform file. The
+[second real reboot](evidence/2026-09-12/reboot-node-1-after-persistence-repair.json)
+passed all eight checks: same machine, new boot, enabled/active firewall, first
+owned INPUT jump, unchanged owned and platform rules, healthy broker, and
+private ports reachable from both peers. The 50 continuity records
+[remained exact](evidence/2026-09-12/continuity-after-repaired-reboot.json).
 
-The first create produced the state bucket and network security group, then
-failed all three VM stages. The [independent inventory](evidence/resources-after-create-1.json)
-confirmed that no VM or boot volume remained from that attempt.
+## Broker and storage evidence
 
-The [attempt history](evidence/compute-attempts.json) records the later failures.
-E4 with 1 OCPU/8 GB failed with a memory-ratio range of 0 to 0. A2 failed with
-explicit 8 GB, explicit 6 GB, omitted memory, and a final 2-vCPU request.
-A1 with default memory failed with "Out of host capacity" in all three ADs.
-The [A2 shape response](evidence/a2-raw-shape-options.json) also advertised
-zero minimum and maximum memory ratios. These observations do not establish
-the cause of Oracle's ratio error. A2 quota was available.
+The fourth create passed host convergence. Its public acceptance reported
+13 passed and 3 failed. All three failures came from incorrectly requiring
+reverse DNS for literal public IPs, which skipped explicit certificate checks.
+The run is not a full acceptance pass. The preserved
+[output](evidence/2026-09-12/acceptance-attempt4.txt) also used graceful Docker
+stop, so its reported zero-second recovery is not abrupt-crash evidence.
+The corrected gate verifies IP SANs directly and times an abrupt KILL from
+before the fault command.
 
-The subnet is regional. The final attempt distributed the three desired nodes
-across AD1, AD2 and AD3 and used an ARM Ubuntu image compatible with A2. The
-pinned AutoMQ image is a multiarchitecture index containing amd64 and arm64.
-No attempt reached bootstrap, TLS, Kafka or failover gates.
+The [installed storage audit](evidence/2026-09-12/storage-installed.json) found
+57 data objects and 9 ops objects outside the package marker prefix. Application
+credentials were denied state HEAD/LIST/GET/PUT and native HEAD/PUT with HTTP404;
+an independent operator request proved the state bucket and owner object existed.
+Native exact-ETag replacement, stale-ETag refusal, lease exclusion, expired
+lease takeover, stale release refusal, holder renewal and release all passed.
 
-Failed applies left empty Terraform states and failed journal entries.
-Recovery used the package's explicit operation-ID checks, native paginated
-instance/boot-volume absence checks and native journal CAS before retry.
+[Node capture](evidence/2026-09-12/nodes-before-repeat.json) verified three
+healthy ARM64 containers, distinct machines, expected node/cluster identities,
+a shared secret bundle and CA, private peer connectivity, and the public port
+boundary. A separate unique topic contains
+[50 exact continuity records](evidence/2026-09-12/continuity-before.json).
 
-## Application storage
+## Corrected published acceptance
 
-The real package storage stage ran independently after compute failed. It
-created the data and ops buckets and a dedicated user, group, policy, customer
-secret key and native API signing key. OCI Identity Domains initially rejected
-the user with ["The primary email must be specified."](evidence/storage-stage-email-error.json)
-The package now requires a tenancy-unique `automq-oci-user-email`.
-
-The [scoped storage probe](evidence/storage-stage.json) passed. Both application
-buckets returned exact synthetic bytes after write/read and allowed cleanup.
-The actual package helper accepted conditional creation, rejected a competing
-create, accepted native replacement with the current ETag, and rejected a
-stale ETag. Its lease helper allowed an initial holder, refused a competitor,
-allowed takeover after expiry, refused the old holder's release, excluded a
-third holder, and allowed the current holder to renew and release.
-
-The application S3 credential received HTTP 404 for state bucket head/list,
-owner-object read and object write. Its native signing identity also received
-404 for state owner-object head and object write. An independent operator
-request proved the state bucket and owner object existed before those checks,
-so these results demonstrate access denial rather than a missing resource.
-
-A [second successful storage create](evidence/storage-stage-repeat.json)
-completed. An independent Terraform plan returned exit code 0 with no changes.
-The earlier failed user-creation apply is counted separately in that evidence.
-These were synthetic object operations. No Kafka record reached object storage.
-
-## Lifecycle deletion
-
-The default `./green delete` refused with exit code 2 while the committed
-`compute-prevent-destroy: true` guard remained enabled.
-
-The [pre-delete native inventory](evidence/resources-before-delete.json)
-records three owned buckets, one network security group, the application
-user/group/policy, its customer secret key and native API key, and zero VMs or
-boot volumes. The state bucket held object versions and delete markers.
-
-The [published partial-delete attempt](evidence/delete-lifecycle.json) routed
-straight to backend finalization and refused with
-`managed backend finalization refused; live or unowned state remains`.
-It skipped application storage and the shared network group because no node
-was ready. This refusal preserved the state bucket. A subsequent intermediate
-implementation reached SSH cleanup but required unavailable broker addresses.
-The local SSH updater also rejected an empty host list during removal with
-`invalid SSH host inventory`. These paths required fixes before normal deletion
-could complete. No storage or infrastructure destroy stage ran in those attempts.
-
-The next delete passed storage and compute cleanup. The
-[independent resource audit](evidence/resources-after-resource-delete.json)
-found no application buckets, IAM resources, network security group, VMs,
-volumes, public IPs or local SSH files/aliases. The state bucket remained with
-278 versions, including 64 delete markers. Its finalization required a separate
-retry after a [metadata-update failure](evidence/backend-finalize-error.json).
-OCI returned 404 to a bucket metadata PUT because UpdateBucket requires POST.
-After that fix, inspection also needed to recognize a valid retired journal
-before checking its retained finalizer lock. Active journals still require an
-idle lock. These changes allow normal deletion to resume from the saved
-`deleting` marker.
-
-Normal deletion then resumed successfully with exit code 0. Finalization took
-242.549 seconds and removed every state version and the bucket last. The
-[final native inventory](evidence/resources-after-delete.json) found no owned
-buckets, compute resources, IAM resources, public IPs or local SSH artifacts.
-The shared subnet and VCN remained available.
-
-The final published launcher repeated deletion with exit code 0 and no local
-source overrides. A [second native audit](evidence/resources-after-repeat-delete.json)
-confirmed that it recreated no resources. The separately created operator
-backend key was then [revoked and verified absent](evidence/backend-credential-revocation.json).
-The ignored private credential file was removed after the final secret scan.
-
-## Published validation and scope
-
-The final installed package comes from AutoMQ repository commit
-`d37766dbac4f115f543fa55cdbd3f25d46a4fc32`. Its launcher pins AutoMQ source
-`ace2f656236741df3d92a6319599e27fd7dbd11f` and compute source
+The installed launcher from package commit
+`c3492fd3627091ad3c07a321061689454534fced` pins AutoMQ source
+`5aac5a3dfc689071156f5e67c5f1bb7eaec5ca50` and compute source
 `58ac766d17cc1b174992986c1088d9d7045e13b5`.
-[Build and create dry-run passed](evidence/published-validation.json) without
-local source overrides. The copied skill and installer lockfile are committed.
+[Build and dry-run passed](evidence/2026-09-12/final-validation.json), and the
+fifth full create completed with exit 0 and no local source overrides.
 
-Live development attempts used source overrides while fixing the defects above.
-The final published version passed repeat deletion, build and dry-run. No full
-create reached broker bootstrap at any pin. TLS, Kafka ACLs, quorum, failover,
-record continuity and repeated full convergence therefore remain unverified
-for this OCI deployment.
+[Public acceptance](evidence/2026-09-12/acceptance-attempt5.txt) passed all 16
+gates. It verified TLS against every public IP SAN, three advertised brokers,
+200 exact public records, wrong-password and prefix-ACL denial, committed
+consumer offsets, and a partition led by the fault victim. An abrupt KILL of
+node 2 was timed from before the command: the partition became writable in
+11 seconds while the victim remained stopped, and all 100 earlier records
+were readable. The broker returned with zero lag and matching log end offset.
+Consumer offsets survived, and a restarted controller re-authenticated.
+
+The 20,000-record workload completed at 1,337 records/second with 5,775 ms mean
+latency and 11,643 ms p99. These are measurements from the small test cluster,
+not a latency or throughput guarantee. The offset check does not force the
+`__consumer_offsets` leader to be the failed broker.
+
+The independent [50-record comparison](evidence/2026-09-12/continuity-after-create5.json)
+passed after this converge. [Node comparison](evidence/2026-09-12/nodes-after-create5.json)
+verified unchanged machine IDs, formatted directory/node/cluster IDs, secret
+bundle hashes, CA, server configuration and container image.
+
+The [sixth create](evidence/2026-09-12/acceptance-attempt6.txt) also passed all
+16 public gates on the same `5aac5a3` source, with 11-second abrupt recovery.
+Its captured [host report](evidence/2026-09-12/host-gates-create6.json) passed
+nine gates, including an exact 500-record round trip and all four negative
+authentication/authorization checks. Continuity and node identities remained
+unchanged after this second full converge.
+
+The repeat reported one firewall change per host. The helper compared the
+saved platform rule text with canonical iptables output; an implicit UDP module
+became explicit in that output, so the helper appended the same NTP rule.
+The [bounded repair](evidence/2026-09-12/firewall-ntp-deduplicated.json) removed
+exactly two extra copies per host and preserved the first copy and every other
+rule in order. The final helper uses `iptables -C` for semantic existence checks.
+AutoMQ source `6b76c01e730c79cfef3e0f9baee68f85b29bd604`, published in
+`379608efb87f53a67e5d556c42efd4a660a531c3`, passed
+[build and dry-run](evidence/2026-09-12/final-idempotence-validation.json).
+
+The [seventh full create](evidence/2026-09-12/acceptance-attempt7.txt) completed
+with exit 0 on `6b76c01`, passing all 16 public gates and
+[nine host gates](evidence/2026-09-12/host-gates-create7.json). This time node 1
+led the faulted partition; abrupt recovery took 10 seconds and all 100 earlier
+records survived. The node returned with zero lag and log end offset 10,133,
+consumer offsets remained committed, and controller re-authentication passed.
+The workload measured 1,408 records/second, 5,695 ms mean latency and
+10,806 ms p99. The firewall task reported unchanged on all three hosts.
+
+The [final independent record comparison](evidence/2026-09-12/continuity-final.json)
+returned the exact original 50 records after both host reboots and all three
+successful full converges. The [final node comparison](evidence/2026-09-12/nodes-final.json)
+passed every check: machine and formatted identities, secrets, CA, configuration
+and image remained unchanged, all containers were healthy, private peer ports
+were reachable, and only the external Kafka port was publicly reachable.
+
+The [final firewall audit](evidence/2026-09-12/final-firewall.json) applied the
+installed helper twice on every node. All six calls reported unchanged; the
+complete rule sequence stayed byte-identical and each host retained exactly
+one native NTP rule. AutoMQ's firewall service was enabled and active on every
+node. Native persistence was enabled everywhere; it was active on rebooted
+node 1 and inactive on nodes 0 and 2, where installation deliberately avoided
+starting a service that would flush live Docker rules. The earlier repaired
+node-1 reboot proves native restoration at boot.
+
+The [final native inventory](evidence/2026-09-12/resources-final.json) found
+three running instances, three available boot volumes, exactly the three owned
+OCI buckets and one network security group. The shared subnet and VCN remained
+available. No cloud mutation or acceptance process was left running.
+
+## Lifecycle scope
+
+The cluster is being retained for use. `compute-prevent-destroy: true` remains
+committed, and the [default delete test](evidence/2026-09-12/delete-guard.json)
+refused destruction. The current backend credential remains available only in
+the ignored private file while the state bucket exists.
+
+Full deletion of this running cluster has not been repeated. The September 11
+run proved cleanup of a partial deployment, including application buckets and
+identity, the network group, all state versions and the state bucket last,
+followed by backend credential revocation. Those results remain historical;
+they do not establish deletion of the September 12 broker cluster.

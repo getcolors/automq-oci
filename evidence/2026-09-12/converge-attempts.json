@@ -1,0 +1,88 @@
+{
+  "profile": "automq-oci",
+  "attempts": [
+    {
+      "attempt": 1,
+      "log": "live-a1-create-1.log (ignored)",
+      "exit": 1,
+      "stage": "compute legacy-state read prerequisite",
+      "error": "SignatureDoesNotMatch",
+      "vm_dispatches": 0
+    },
+    {
+      "attempt": 2,
+      "log": "live-a1-create-2.log (ignored)",
+      "exit": 1,
+      "compute": "3 A1 nodes running",
+      "storage": "managed buckets and application identity created",
+      "failed_task": "automq-store adopt",
+      "failed_operation": "GetObject colors-ready marker",
+      "error": "SignatureDoesNotMatch",
+      "at": "2026-09-12T08:26:19Z",
+      "precondition_gate": "passed before this request",
+      "broker_started": false,
+      "secrets_generated": true
+    },
+    {
+      "attempt": 3,
+      "exit": 1,
+      "package_source": "0bbeb50765ee73fc79b97c1418162eb6da8b7c19",
+      "failed_task": "automq-store adopt",
+      "error": "operations bucket nonempty: two failed-attempt2 precondition test keys",
+      "broker_started": false,
+      "precondition_gate": "passed"
+    },
+    {
+      "attempt": 4,
+      "exit": 1,
+      "package_source": "0bbeb50765ee73fc79b97c1418162eb6da8b7c19",
+      "host_convergence": "passed",
+      "public_acceptance": {
+        "passed": 13,
+        "failed": 3,
+        "failures": "literalIP reverseDNS lookup prevented explicit TLS handshakes"
+      },
+      "failover_scope": "graceful docker stop; timer began after stop returned; not abrupt crash evidence",
+      "broker_started": true
+    },
+    {
+      "attempt": 5,
+      "exit": 0,
+      "package_source": "5aac5a3dfc689071156f5e67c5f1bb7eaec5ca50",
+      "host_convergence": "passed",
+      "public_acceptance": {
+        "passed": 16,
+        "failed": 0
+      },
+      "abrupt_fault_recovery_seconds": 11,
+      "local_source_overrides": false
+    },
+    {
+      "attempt": 6,
+      "exit": 0,
+      "package_source": "5aac5a3dfc689071156f5e67c5f1bb7eaec5ca50",
+      "host_convergence": "9 gates passed",
+      "public_acceptance": {
+        "passed": 16,
+        "failed": 0
+      },
+      "abrupt_fault_recovery_seconds": 11,
+      "local_source_overrides": false,
+      "repeat_drift": "firewall helper appended duplicate native UDP123 rule due textual canonicalization mismatch"
+    },
+    {
+      "attempt": 7,
+      "exit": 0,
+      "package_source": "6b76c01e730c79cfef3e0f9baee68f85b29bd604",
+      "host_convergence": "9 gates passed",
+      "public_acceptance": {
+        "passed": 16,
+        "failed": 0
+      },
+      "abrupt_fault_recovery_seconds": 10,
+      "victim_node": 1,
+      "local_source_overrides": false,
+      "firewall_task": "unchanged on all three nodes"
+    }
+  ]
+}

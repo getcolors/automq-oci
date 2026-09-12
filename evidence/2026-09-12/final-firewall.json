@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "observed_at": "2026-09-12T09:42:03.615436+00:00",
+      "helper_sha256": "6db2999a304ad5439d224a1b20b0bdd7a303eff452ba7ce965e543cf79cb1296",
+      "platform_baseline_sha256": "02bef6508e4f471a2d6ffffe849c3ad04ad87c9a101ab4785c18054d041d63b2",
+      "first_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "second_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "before_sha256": "8ceebf00386127b063e81ea1acd06a75642faa423c80da6fb4c9134bd21e08ad",
+      "middle_sha256": "8ceebf00386127b063e81ea1acd06a75642faa423c80da6fb4c9134bd21e08ad",
+      "after_sha256": "8ceebf00386127b063e81ea1acd06a75642faa423c80da6fb4c9134bd21e08ad",
+      "ntp_123_rules": [
+        "-A InstanceServices -d 169.254.169.254/32 -p udp -m udp --dport 123 -m comment --comment \"See the Oracle-Provided Images section in the Oracle Cloud Infrastructure documentation for security impact of modifying or removing this rule\" -j ACCEPT"
+      ],
+      "services": {
+        "netfilter-persistent.service": {
+          "enabled": "enabled",
+          "active": "inactive"
+        },
+        "automq-firewall.service": {
+          "enabled": "enabled",
+          "active": "active"
+        }
+      },
+      "checks": {
+        "first_apply_unchanged": true,
+        "second_apply_unchanged": true,
+        "rules_byte_identical": true,
+        "ntp_123_exactly_one": true,
+        "native_persistence_enabled": true,
+        "owned_firewall_enabled_active": true
+      },
+      "passed": true,
+      "alias": "automq-oci-0"
+    },
+    {
+      "observed_at": "2026-09-12T09:42:04.712975+00:00",
+      "helper_sha256": "6db2999a304ad5439d224a1b20b0bdd7a303eff452ba7ce965e543cf79cb1296",
+      "platform_baseline_sha256": "02bef6508e4f471a2d6ffffe849c3ad04ad87c9a101ab4785c18054d041d63b2",
+      "first_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "second_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "before_sha256": "f3d8f32888ad5e757236c1bfe56b20dc9decf1b504122603c5c46e37d45d2290",
+      "middle_sha256": "f3d8f32888ad5e757236c1bfe56b20dc9decf1b504122603c5c46e37d45d2290",
+      "after_sha256": "f3d8f32888ad5e757236c1bfe56b20dc9decf1b504122603c5c46e37d45d2290",
+      "ntp_123_rules": [
+        "-A InstanceServices -d 169.254.169.254/32 -p udp -m udp --dport 123 -m comment --comment \"See the Oracle-Provided Images section in the Oracle Cloud Infrastructure documentation for security impact of modifying or removing this rule\" -j ACCEPT"
+      ],
+      "services": {
+        "netfilter-persistent.service": {
+          "enabled": "enabled",
+          "active": "active"
+        },
+        "automq-firewall.service": {
+          "enabled": "enabled",
+          "active": "active"
+        }
+      },
+      "checks": {
+        "first_apply_unchanged": true,
+        "second_apply_unchanged": true,
+        "rules_byte_identical": true,
+        "ntp_123_exactly_one": true,
+        "native_persistence_enabled": true,
+        "owned_firewall_enabled_active": true
+      },
+      "passed": true,
+      "alias": "automq-oci-1"
+    },
+    {
+      "observed_at": "2026-09-12T09:42:05.759447+00:00",
+      "helper_sha256": "6db2999a304ad5439d224a1b20b0bdd7a303eff452ba7ce965e543cf79cb1296",
+      "platform_baseline_sha256": "02bef6508e4f471a2d6ffffe849c3ad04ad87c9a101ab4785c18054d041d63b2",
+      "first_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "second_apply": {
+        "chain": "AUTOMQ_DD8DEF5D983748B3",
+        "changed": false,
+        "rules": 7
+      },
+      "before_sha256": "fcdf905eb440e1019cfbb3d75b82f3ee36e26338f58c5b0f1a24598ec87b2dc8",
+      "middle_sha256": "fcdf905eb440e1019cfbb3d75b82f3ee36e26338f58c5b0f1a24598ec87b2dc8",
+      "after_sha256": "fcdf905eb440e1019cfbb3d75b82f3ee36e26338f58c5b0f1a24598ec87b2dc8",
+      "ntp_123_rules": [
+        "-A InstanceServices -d 169.254.169.254/32 -p udp -m udp --dport 123 -m comment --comment \"See the Oracle-Provided Images section in the Oracle Cloud Infrastructure documentation for security impact of modifying or removing this rule\" -j ACCEPT"
+      ],
+      "services": {
+        "netfilter-persistent.service": {
+          "enabled": "enabled",
+          "active": "inactive"
+        },
+        "automq-firewall.service": {
+          "enabled": "enabled",
+          "active": "active"
+        }
+      },
+      "checks": {
+        "first_apply_unchanged": true,
+        "second_apply_unchanged": true,
+        "rules_byte_identical": true,
+        "ntp_123_exactly_one": true,
+        "native_persistence_enabled": true,
+        "owned_firewall_enabled_active": true
+      },
+      "passed": true,
+      "alias": "automq-oci-2"
+    }
+  ],
+  "passed": true
+}

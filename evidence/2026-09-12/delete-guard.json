@@ -1,0 +1,6 @@
+{
+  "exit": 2,
+  "guard_enabled": true,
+  "message": "compute destruction is protected; set COLORS_PAR_COMPUTE_PREVENT_DESTROY=false to delete",
+  "resources_retained": true
+}

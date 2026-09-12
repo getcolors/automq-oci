@@ -1,0 +1,160 @@
+{
+  "listeners_stopped": true,
+  "passed": true,
+  "private": {
+    "automq-oci-0": [
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9094
+      }
+    ],
+    "automq-oci-1": [
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9094
+      }
+    ],
+    "automq-oci-2": [
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.172",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.166",
+        "open": true,
+        "port": 9094
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9093
+      },
+      {
+        "host": "10.0.0.238",
+        "open": true,
+        "port": 9094
+      }
+    ]
+  },
+  "public": [
+    {
+      "expected_open": true,
+      "node": "automq-oci-0",
+      "open": true,
+      "port": 9092
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-0",
+      "open": false,
+      "port": 9093
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-0",
+      "open": false,
+      "port": 9094
+    },
+    {
+      "expected_open": true,
+      "node": "automq-oci-1",
+      "open": true,
+      "port": 9092
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-1",
+      "open": false,
+      "port": 9093
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-1",
+      "open": false,
+      "port": 9094
+    },
+    {
+      "expected_open": true,
+      "node": "automq-oci-2",
+      "open": true,
+      "port": 9092
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-2",
+      "open": false,
+      "port": 9093
+    },
+    {
+      "expected_open": false,
+      "node": "automq-oci-2",
+      "open": false,
+      "port": 9094
+    }
+  ],
+  "scope": "temporary TCP listeners before broker genesis; no Kafka acceptance",
+  "verified_at_utc": "2026-09-12T08:34:40.317052+00:00"
+}

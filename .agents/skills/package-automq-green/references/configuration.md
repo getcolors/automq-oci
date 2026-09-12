@@ -188,6 +188,23 @@ Use `oci-tenancy-id`, `oci-compartment-id`, `oci-namespace`,
 `oci-config-file-profile`, `automq-oci-user-email`, and the OCI region in
 `automq-r2-region`. The service user needs an email unique within the tenancy.
 Identity Domains rejected creation without a primary email in the live test.
+
+OCI Ubuntu images reject inbound traffic in native iptables even when UFW is
+inactive. The package installs an owned INPUT chain before that reject:
+Kafka uses its configured source CIDRs, and internal/controller ports accept
+only the cluster peers. A boot unit restores the chain after the platform
+firewall and before Docker. It preserves existing platform, iSCSI and Docker
+rules and does not enable UFW. See [Oracle's platform image firewall guidance](https://docs.oracle.com/en-us/iaas/Content/Compute/References/images.htm).
+
+New OCI credentials must pass listing, missing-object GET and exact-byte
+PUT/GET/DELETE probes against both application buckets before conditional
+writes are tested. A successful listing alone did not prove GetObject was
+ready in the live run. Authentication failures retry only inside the bounded
+pre-genesis readiness gate; ownership and genesis refusals remain failures.
+Readiness records each exact random probe key in a root-owned local ledger
+before writing. Retries must remove recorded probes and verify absence before
+starting new ones. A ledger for a different storage identity fails immediately;
+the package never sweeps a prefix or relaxes bucket adoption to ignore debris.
 The endpoint is `https://<namespace>.compat.objectstorage.<region>.oraclecloud.com`.
 Set `oci-home-region` when the tenancy home region differs, and `oci-auth:
 SecurityToken` for a session profile. API key authentication is the default.
@@ -228,3 +245,18 @@ and lego's binary name follow the host. The pinned AutoMQ image must include
 that platform. `oci-memory-in-gbs` is optional in the pinned compute library;
 omit it to request the shape's API default. Omission did not resolve the
 observed A2 ratio rejection, so do not treat it as a verified repair.
+
+Public acceptance verifies literal-IP endpoints against certificate IP SANs
+without requiring reverse DNS. Its failover gate selects the actual partition
+leader, starts the recovery timer before an abrupt Docker KILL and verifies the
+victim stays stopped until the outage checks finish. Graceful-stop timing from
+earlier acceptance scripts does not prove abrupt crash recovery.
+
+On OCI Ubuntu, installing `ufw` removes `iptables-persistent` and
+`netfilter-persistent`; the unchanged live rules then disappear at reboot.
+Keep native persistence, disable package autosave and service autostart during
+installation, and enable restoration for the next boot. The scoped helper
+restores missing native rules from the retained `/etc/iptables/rules.v4` before
+applying its own chain. It never flushes Docker tables or saves runtime rules
+over that platform baseline. Verify the InstanceServices OUTPUT rules after a
+real reboot as well as the application ports.

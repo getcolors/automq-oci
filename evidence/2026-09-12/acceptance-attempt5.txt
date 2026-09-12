@@ -1,0 +1,21 @@
+acceptance: the cluster as a client sees it
+  note — client CA: /home/ubuntu/code/getcolors/automq-oci/./.colors-a1/automq-oci/automq-acceptance/ca.crt
+  ok   — 130.61.160.140 serves a valid certificate
+  ok   — 130.61.219.153 serves a valid certificate
+  ok   — 130.61.176.27 serves a valid certificate
+  ok   — metadata over SASL_SSL lists 3 brokers
+  ok   — 200 records produced and consumed through the public endpoint
+  ok   — a wrong password is refused by the public endpoint
+  ok   — the client principal cannot write outside colors-
+  ok   — consumer group colors-survivor-1789204485-3009622 committed per-partition offsets before the outage
+acceptance: failover
+  ok   — partition 0 of colors-failover is led by node 2
+  ok   — 100 pre-failure records are readable before the kill
+  ok   — the partition became writable again 11s after its leader was killed
+  ok   — all 100 pre-failure records survived the leader's death
+  ok   — node 2 re-registered and caught up (lag=0 logEndOffset=5947 leader=5947)
+  ok   — consumer group colors-survivor-1789204485-3009622 kept every partition's committed offset across the outage
+  ok   — a restarted controller (node 1) re-authenticated and rejoined the quorum
+  ok   — producer performance workload completed: 20000 records sent, 1337.077149 records/sec (1.31 MB/sec), 5774.96 ms avg latency, 11659.00 ms max latency, 5642 ms 50th, 10941 ms 95th, 11643 ms 99th, 11657 ms 99.9th.
+
+acceptance: 16 passed, 0 failed

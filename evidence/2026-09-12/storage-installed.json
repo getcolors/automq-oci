@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "competing_create_http": 412,
+    "competitor_denied": true,
+    "conditional_initial_create": true,
+    "conditional_write_preserved_value": true,
+    "current_release": true,
+    "data_objects": 57,
+    "exact_native_etag_replace": true,
+    "expired_takeover": true,
+    "holder_renewal": true,
+    "initial_acquire": true,
+    "native_etag_present": true,
+    "native_state_head_http": 404,
+    "native_state_put_http": 404,
+    "new_holder_still_excludes": true,
+    "ops_objects": 9,
+    "stale_native_etag_rejected": true,
+    "stale_release_denied": true,
+    "state_get_object_http": 404,
+    "state_head_bucket_http": 404,
+    "state_list_objects_v2_http": 404,
+    "state_put_object_http": 404
+  },
+  "native_state_verification": {
+    "bucket_exists": true,
+    "object_exists": true
+  },
+  "passed": true,
+  "profile": "automq-oci",
+  "scope": "installed broker storage client, application objects, state denials and isolated leases",
+  "verified_at_utc": "2026-09-12T08:58:29.012707+00:00"
+}

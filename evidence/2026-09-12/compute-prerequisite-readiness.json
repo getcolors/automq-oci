@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-12T08:21:08.395960+00:00",
+  "account_namespace": "fryovegrk8e7",
+  "region": "eu-frankfurt-1",
+  "bucket": "automq-oci-state-fryovegrk8e7",
+  "operation": "published library legacy-state GetObject prerequisite",
+  "key": "automq-oci/automq-infrastructure.tfstate",
+  "observations": [
+    {
+      "attempt": 1,
+      "native_bootstrap": "ready",
+      "aws_cli_exit": 254,
+      "s3_error_code": "SignatureDoesNotMatch",
+      "library_state_presence": "error",
+      "native_journal": "absent"
+    },
+    {
+      "attempt": 2,
+      "native_bootstrap": "ready",
+      "aws_cli_exit": 254,
+      "s3_error_code": "NoSuchKey",
+      "library_state_presence": "absent",
+      "native_journal": "absent"
+    }
+  ],
+  "credential_handling": "Library strips inherited AWS variables, uses private generated credentials/config files, and explicitly passes eu-frankfurt-1 region. Credentials unchanged between observations.",
+  "interpretation": "GetObject readiness became successful after initial signature failure; successful ListObjects alone did not prove this operation ready.",
+  "cloud_mutations_by_probe": false
+}

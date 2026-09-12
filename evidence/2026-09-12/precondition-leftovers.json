@@ -1,0 +1,21 @@
+{
+  "objects": [
+    {
+      "name": "_colors/automq-oci/preconditions/7a2f2dcc1fa348ee87494158dac97721.json",
+      "size": 23,
+      "created": "2026-09-12T08:25:41.450000+00:00",
+      "body": "{\n  \"value\": \"second\"\n}",
+      "deleted": true
+    },
+    {
+      "name": "_colors/automq-oci/preconditions/93d849df24d34862aa606f158330ea57.json",
+      "size": 22,
+      "created": "2026-09-12T08:25:09.584000+00:00",
+      "body": "{\n  \"value\": \"first\"\n}",
+      "deleted": true
+    }
+  ],
+  "remaining_objects": [],
+  "verified_at_utc": "2026-09-12T08:46:56.021193+00:00",
+  "scope": "Only two exact precondition test keys from failed attempt2 removed after validating their bodies; no ownership/genesis markers changed."
+}
